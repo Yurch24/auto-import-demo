@@ -1,0 +1,2006 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Каталоги — АвтоПригон</title>
+  <meta name="description" content="Пригон автомобилей из Кореи, США и Китая под ключ. Каталоги, калькулятор стоимости, отзывы.">
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="icon" href="static/favicon.svg" type="image/svg+xml">
+  <meta name="robots" content="noindex, follow">
+</head>
+<body>
+<header class="header">
+  <div class="container header__inner">
+    <a class="logo" href="index.html">АвтоПригон<span class="logo__dot">.</span></a>
+    <nav class="nav" id="main-nav">
+      <a href="about.html" class="nav__link ">О нас</a>
+      <a href="examples.html" class="nav__link ">Примеры</a>
+      <a href="catalog.html" class="nav__link is-active">Каталоги</a>
+      <a href="reviews.html" class="nav__link ">Отзывы</a>
+      <a href="calculator.html" class="nav__link ">Калькулятор</a>
+      <a href="contacts.html" class="nav__link ">Контакты</a>
+    </nav>
+    <a class="btn btn--outline header__phone" href="tel:+7(900)000-00-00">+7 (900) 000-00-00</a>
+    <button class="burger" id="burger" aria-label="Меню" type="button">☰</button>
+  </div>
+</header>
+
+
+
+<main>
+<section class="page-head">
+  <div class="container">
+    <h1>Каталоги авто</h1>
+    <div class="tabs tabs--lg">
+      <a class="tab " href="catalog.html">Все</a>
+      <a class="tab " href="catalog-encar.html">🇰🇷 Корея · Encar</a>
+      <a class="tab " href="catalog-bidcars.html">🇺🇸 США · Bid.cars</a>
+      <a class="tab is-active" href="catalog-che168.html">🇨🇳 Китай · che168</a>
+    </div>
+    
+    <div class="demo-note">Демо-данные: парсеры источников подключаются на следующем этапе. Фильтры и вёрстка — рабочие.</div>
+    
+  </div>
+</section>
+
+<section class="section">
+  <div class="container catalog">
+    <aside class="filters">
+      <form method="get" action="catalog.html" id="catalog-finder" data-count-url="/api/lots/count" data-meta-url="/api/filter/meta" data-models='{&#34;Alfa Romeo&#34;: [&#34;Stelvio&#34;], &#34;Audi&#34;: [&#34;A4&#34;, &#34;A5&#34;, &#34;A6&#34;, &#34;A6L&#34;, &#34;A7&#34;, &#34;A7L&#34;, &#34;A8&#34;, &#34;New A6&#34;, &#34;Q7&#34;, &#34;Q7 New Energy&#34;, &#34;S4&#34;], &#34;BMW&#34;: [&#34;1 Series&#34;, &#34;2 Series Active Tourer&#34;, &#34;2 Series Gran Coupe&#34;, &#34;3 Series&#34;, &#34;4 Series&#34;, &#34;5 Series&#34;, &#34;5 Series GT&#34;, &#34;6 Series GT&#34;, &#34;8 Series&#34;, &#34;M3&#34;, &#34;M4&#34;, &#34;M5&#34;, &#34;X1&#34;, &#34;X2&#34;, &#34;X3&#34;, &#34;X4&#34;, &#34;X5&#34;, &#34;X5 (Import)&#34;, &#34;X6&#34;, &#34;X7&#34;, &#34;i4&#34;, &#34;iX3&#34;], &#34;BYD&#34;: [&#34;F3&#34;, &#34;Song Ultra&#34;], &#34;Besturn&#34;: [&#34;B70&#34;], &#34;Buick&#34;: [&#34;Envision Plus&#34;, &#34;Envision S&#34;, &#34;Excelle&#34;, &#34;Excelle GT&#34;, &#34;LaCrosse&#34;], &#34;Cadillac&#34;: [&#34;ATS-L&#34;, &#34;CT6&#34;, &#34;XT5&#34;, &#34;XT6&#34;], &#34;Changan&#34;: [&#34;CS75&#34;], &#34;Chery&#34;: [&#34;Fengyun 2&#34;, &#34;Tiggo 7&#34;], &#34;Chevrolet&#34;: [&#34;All-New Malibu&#34;, &#34;Aveo&#34;, &#34;Camaro&#34;, &#34;Cruze&#34;, &#34;Impala&#34;, &#34;Malibu&#34;, &#34;New Malibu&#34;, &#34;New Spark&#34;, &#34;New Trax&#34;, &#34;New abeo -door Sedan&#34;, &#34;New teureilbeulRanger&#34;, &#34;Spark&#34;, &#34;Traverse&#34;, &#34;Trax&#34;, &#34;Trax keuroseuobeo&#34;, &#34;kaeptiba&#34;, &#34;nekseuteu Spark&#34;, &#34;olrando&#34;, &#34;rieAll-New Colorado&#34;, &#34;teureilbeulRanger&#34;], &#34;Citroën&#34;: [&#34;C4L&#34;], &#34;Denza&#34;: [&#34;D9&#34;], &#34;Dodge&#34;: [&#34;Charger&#34;], &#34;Everus&#34;: [&#34;S1&#34;], &#34;Ford&#34;: [&#34;Edge&#34;, &#34;Escape&#34;, &#34;Explorer&#34;, &#34;Explorer 6 Gen&#34;, &#34;Focus&#34;, &#34;Fusion&#34;, &#34;Mustang&#34;, &#34;beurotko 6 Gen&#34;, &#34;meoseutaet 7 Gen&#34;], &#34;Geely&#34;: [&#34;Coolray&#34;, &#34;Emgrand&#34;, &#34;GX7&#34;, &#34;King Kong Fortune&#34;, &#34;Vision&#34;], &#34;Genesis&#34;: [&#34;EQ900&#34;, &#34;G70&#34;, &#34;G80&#34;, &#34;G90&#34;, &#34;GV70&#34;, &#34;GV80&#34;, &#34;New G70&#34;], &#34;Haima&#34;: [&#34;M3&#34;], &#34;Haval&#34;: [&#34;Jolion&#34;], &#34;Honda&#34;: [&#34;eokodeu 10 Gen&#34;, &#34;sibik&#34;], &#34;Hyundai&#34;: [&#34;All-New Tucson&#34;, &#34;Avante&#34;, &#34;Avante AD&#34;, &#34;Casper&#34;, &#34;Casper ilrekteurik&#34;, &#34;Equus&#34;, &#34;Genesis DH&#34;, &#34;Grandeur&#34;, &#34;Grandeur HG&#34;, &#34;Grandeur Hybrid&#34;, &#34;Grandeur IG&#34;, &#34;Grandeur IG Hybrid&#34;, &#34;Ioniq 5&#34;, &#34;Ioniq 6&#34;, &#34;Kona&#34;, &#34;LF Sonata&#34;, &#34;LF Sonata Hybrid&#34;, &#34;New Maextro&#34;, &#34;New Palisade&#34;, &#34;New geuraendeu seutarekseu&#34;, &#34;Palisade&#34;, &#34;Santa Fe&#34;, &#34;Santa Fe DM&#34;, &#34;Santa Fe TM&#34;, &#34;Santa Fe peuraim&#34;, &#34;Sonata&#34;, &#34;Sonata Hybrid&#34;, &#34;Staria&#34;, &#34;Tucson&#34;, &#34;Tucson Hybrid&#34;, &#34;aionik ilrekteurik&#34;, &#34;aseulran&#34;, &#34;eksenteu&#34;, &#34;geuraendeu seutarekseu&#34;, &#34;neksso&#34;], &#34;Jaguar&#34;: [&#34;F-PACE&#34;, &#34;XF&#34;, &#34;XJ&#34;], &#34;Jeep&#34;: [&#34;Grand Cherokee&#34;, &#34;Renegade&#34;, &#34;Wrangler&#34;, &#34;cheroki&#34;, &#34;geulraedieiteo&#34;, &#34;keompaeseu 2nd Gen&#34;], &#34;KG Mobility&#34;: [&#34;All-New Rexton&#34;, &#34;G4 Rexton&#34;, &#34;Korando Sport&#34;, &#34;New Rexton Sport&#34;, &#34;New Rexton Sport kan&#34;, &#34;New seutail Korando C&#34;, &#34;Rexton Sport&#34;, &#34;Tivoli&#34;, &#34;Tivoli Air&#34;, &#34;Tivoli ameo&#34;, &#34;aektieon 2nd Gen&#34;, &#34;beri New Tivoli&#34;, &#34;byutipul Korando&#34;, &#34;toreseu&#34;], &#34;Kia&#34;: [&#34;All-New Carens&#34;, &#34;All-New Carnival&#34;, &#34;All-New K3&#34;, &#34;All-New K7&#34;, &#34;All-New Morning&#34;, &#34;All-New Sorento&#34;, &#34;All-New Soul&#34;, &#34;Carnival&#34;, &#34;Carnival 4th Gen&#34;, &#34;Carnival R&#34;, &#34;EV6&#34;, &#34;EV9&#34;, &#34;K3 kup&#34;, &#34;K5&#34;, &#34;K5 2nd Gen&#34;, &#34;K5 3rd Gen&#34;, &#34;K7&#34;, &#34;K7 peurimieo&#34;, &#34;K8&#34;, &#34;K8 Hybrid&#34;, &#34;K9&#34;, &#34;K9 2nd Gen&#34;, &#34;Mohave&#34;, &#34;Mohave maseuteo&#34;, &#34;Morning&#34;, &#34;New K3&#34;, &#34;New K3 2nd Gen&#34;, &#34;New K8 Hybrid&#34;, &#34;New Ray&#34;, &#34;New Seltos&#34;, &#34;New Sorento R&#34;, &#34;New gia Ray&#34;, &#34;Niro&#34;, &#34;Niro EV&#34;, &#34;PV5&#34;, &#34;Ray&#34;, &#34;Seltos&#34;, &#34;Sorento&#34;, &#34;Sorento 4th Gen&#34;, &#34;Sportage 4th Gen&#34;, &#34;Sportage 5th Gen&#34;, &#34;Sportage 5th Gen Hybrid&#34;, &#34;Sportage R&#34;, &#34;Sportage boldeu&#34;, &#34;Stinger&#34;, &#34;Stinger maiseuteo&#34;, &#34;Stonic&#34;, &#34;di All-New Niro&#34;, &#34;taseuman&#34;], &#34;Lamborghini&#34;: [&#34;uruseu&#34;], &#34;Land Rover&#34;: [&#34;Discovery&#34;, &#34;Discovery 5&#34;, &#34;Discovery Sport&#34;, &#34;Discovery Sport 2nd Gen&#34;, &#34;Range Rover 5th Gen&#34;, &#34;Range Rover Evoque 2nd Gen&#34;, &#34;Range Rover Sport 2nd Gen&#34;, &#34;Range Rover Velar&#34;, &#34;dipen&#34;], &#34;Lincoln&#34;: [&#34;ebieiteo 2nd Gen&#34;, &#34;koseeo&#34;, &#34;nebigeiteo 4th Gen&#34;, &#34;notilreoseu 2nd Gen&#34;], &#34;MG&#34;: [&#34;ZS&#34;], &#34;MINI&#34;: [&#34;CLUBMAN&#34;, &#34;Cooper&#34;, &#34;Cooper Clubman&#34;, &#34;Cooper Countryman&#34;, &#34;Cooper S&#34;, &#34;Cooper S Clubman&#34;, &#34;Cooper S Countryman&#34;, &#34;Cooper S Countryman 3rd Gen&#34;, &#34;JCW&#34;, &#34;eiseumaen 1st Gen&#34;], &#34;Mercedes-Benz&#34;: [&#34;AMG GT&#34;, &#34;C-Class&#34;, &#34;C-Class W205&#34;, &#34;C-Class W206&#34;, &#34;CLA-Class C117&#34;, &#34;CLE-Class C236&#34;, &#34;CLS&#34;, &#34;CLS-Class C257&#34;, &#34;E-Class&#34;, &#34;E-Class W213&#34;, &#34;E-Class W214&#34;, &#34;EQC N293&#34;, &#34;EQE SUV X294&#34;, &#34;EQS SUV X296&#34;, &#34;EQS V297&#34;, &#34;G-Class W463b&#34;, &#34;G-Class W465&#34;, &#34;GLA-Class&#34;, &#34;GLA-Class H247&#34;, &#34;GLA-Class X156&#34;, &#34;GLB&#34;, &#34;GLB-Class X247&#34;, &#34;GLC Coupe&#34;, &#34;GLC-Class X253&#34;, &#34;GLC-Class X254&#34;, &#34;GLE&#34;, &#34;GLE-Class&#34;, &#34;GLE-Class W166&#34;, &#34;GLE-Class W167&#34;, &#34;GLS-Class X167&#34;, &#34;Metris&#34;, &#34;S-Class W222&#34;, &#34;S-Class W223&#34;, &#34;SL-Class R232&#34;], &#34;Nissan&#34;: [&#34;Sunny&#34;, &#34;Teana&#34;], &#34;Peugeot&#34;: [&#34;301&#34;, &#34;308&#34;], &#34;Porsche&#34;: [&#34;911&#34;, &#34;Cayenne&#34;, &#34;Macan&#34;, &#34;Panamera&#34;], &#34;Renault Korea&#34;: [&#34;New QM6&#34;, &#34;New SM6&#34;, &#34;NewQM5&#34;, &#34;NewSM5 peulraetineom&#34;, &#34;QM3&#34;, &#34;SM6&#34;, &#34;SM7 New Art&#34;, &#34;XM3&#34;, &#34;areukana&#34;, &#34;geukolreoseu&#34;, &#34;kaepcheo&#34;], &#34;Subaru&#34;: [&#34;BRZ&#34;, &#34;Forester&#34;], &#34;Tesla&#34;: [&#34;Model Y&#34;, &#34;model 3&#34;, &#34;model Y&#34;], &#34;Toyota&#34;: [&#34;Camry&#34;, &#34;Highlander&#34;, &#34;Prius 4th Gen&#34;, &#34;keuraun keuroseuobeo&#34;, &#34;siena 4th Gen&#34;], &#34;Volkswagen&#34;: [&#34;ID.ERA&#34;, &#34;Magotan&#34;, &#34;Passat&#34;, &#34;Passat Lingyu&#34;, &#34;Santana&#34;, &#34;Tiguan&#34;, &#34;ateon&#34;, &#34;golpeu 8 Gen&#34;, &#34;jeta 7 Gen&#34;, &#34;tiguan 2nd Gen&#34;, &#34;tiguan olseupeiseu&#34;, &#34;tuarek 3rd Gen&#34;], &#34;Volvo&#34;: [&#34;S60 3rd Gen&#34;, &#34;S90&#34;, &#34;V40 keuroseukeonteuri&#34;, &#34;XC40&#34;, &#34;XC60 2nd Gen&#34;, &#34;XC90&#34;, &#34;XC90 2nd Gen&#34;], &#34;Xiangjie&#34;: [&#34;Enjoy World S9T&#34;], &#34;Xiaomi&#34;: [&#34;Auto Xiaomi SU7&#34;]}'>
+        <input type="hidden" name="src" value="che168">
+        <input type="hidden" name="vehicle" value="car">
+        <div class="filters__title">Фильтры <a class="link-btn" href="catalog-che168.html">Сброс</a></div>
+
+        <div class="filters__vehicle" role="tablist">
+          <button type="button" class="filters__vehicle-tab is-active" data-vehicle="car" role="tab">Автомобиль</button>
+          <button type="button" class="filters__vehicle-tab" data-vehicle="moto" role="tab">Мотоцикл</button>
+        </div>
+
+        <label class="field"><span>Поиск</span>
+          <input type="search" name="q" value="" placeholder="Название, VIN, номер лота…">
+        </label>
+        <label class="field"><span>Марка</span>
+          <select name="make" id="cat-make">
+            <option value="">Все марки</option>
+            <option value="Alfa Romeo" >Alfa Romeo</option><option value="Audi" >Audi</option><option value="BMW" >BMW</option><option value="BYD" >BYD</option><option value="Besturn" >Besturn</option><option value="Buick" >Buick</option><option value="Cadillac" >Cadillac</option><option value="Changan" >Changan</option><option value="Chery" >Chery</option><option value="Chevrolet" >Chevrolet</option><option value="Citroën" >Citroën</option><option value="Denza" >Denza</option><option value="Dodge" >Dodge</option><option value="Everus" >Everus</option><option value="Ford" >Ford</option><option value="Geely" >Geely</option><option value="Genesis" >Genesis</option><option value="Haima" >Haima</option><option value="Haval" >Haval</option><option value="Honda" >Honda</option><option value="Hyundai" >Hyundai</option><option value="Jaguar" >Jaguar</option><option value="Jeep" >Jeep</option><option value="KG Mobility" >KG Mobility</option><option value="Kia" >Kia</option><option value="Lamborghini" >Lamborghini</option><option value="Land Rover" >Land Rover</option><option value="Lincoln" >Lincoln</option><option value="MG" >MG</option><option value="MINI" >MINI</option><option value="Mercedes-Benz" >Mercedes-Benz</option><option value="Nissan" >Nissan</option><option value="Peugeot" >Peugeot</option><option value="Porsche" >Porsche</option><option value="Renault Korea" >Renault Korea</option><option value="Subaru" >Subaru</option><option value="Tesla" >Tesla</option><option value="Toyota" >Toyota</option><option value="Volkswagen" >Volkswagen</option><option value="Volvo" >Volvo</option><option value="Xiangjie" >Xiangjie</option><option value="Xiaomi" >Xiaomi</option>
+          </select>
+        </label>
+        <label class="field"><span>Модель</span>
+          <select name="model" id="cat-model" data-selected="">
+            <option value="">Все модели</option>
+          </select>
+        </label>
+        <div class="form-row form-row--2">
+          <label class="field"><span>Год от</span><input type="number" name="year_from" value="" placeholder="2009"></label>
+          <label class="field"><span>Год до</span><input type="number" name="year_to" value="" placeholder="2026"></label>
+        </div>
+        <label class="field"><span>Пробег до, км</span><input type="number" name="mileage_to" value=""></label>
+        <label class="field"><span>Цена до, тыс. ₽</span><input type="number" name="price_to" value=""></label>
+        <label class="field"><span>Бюджет «под ключ», млн ₽</span><input type="number" step="0.1" name="budget" value=""></label>
+        <label class="field"><span>Топливо</span>
+          <select name="fuel" id="cat-fuel">
+            <option value="">Любое</option>
+            <option value="бензин" >бензин</option><option value="Diesel" >Diesel</option><option value="Electric" >Electric</option><option value="Gas" >Gas</option><option value="Gasoline + 48V Mild Hybrid System" >Gasoline + 48V Mild Hybrid System</option><option value="Hybrid" >Hybrid</option><option value="Hydrogen" >Hydrogen</option><option value="LPG" >LPG</option><option value="Pure Electric" >Pure Electric</option><option value="Range Extender" >Range Extender</option>
+          </select>
+        </label>
+        <label class="field"><span>Коробка</span>
+          <select name="transmission" id="cat-transmission">
+            <option value="">Любая</option>
+            <option value="автомат" >автомат</option><option value="Automatic" >Automatic</option><option value="Manual" >Manual</option>
+          </select>
+        </label>
+        <button class="btn btn--primary btn--block" type="submit">
+          Показать <span id="cat-count">84</span> <span data-count-word>машин</span>
+        </button>
+      </form>
+    </aside>
+
+    <div class="catalog__list">
+      <div class="catalog__toolbar">
+        <span class="catalog__count">Найдено: <strong id="cat-count-top">84</strong></span>
+        <form method="get" action="catalog.html" class="catalog__sort">
+          <input type="hidden" name="src" value="che168">
+          <input type="hidden" name="vehicle" value="car">
+          <select name="sort" onchange="this.form.submit()">
+            <option value="new" selected>Сначала новые</option>
+            <option value="price_asc" >Цена ↑</option>
+            <option value="price_desc" >Цена ↓</option>
+            <option value="year_desc" >Год ↓</option>
+            <option value="mileage_asc" >Пробег ↑</option>
+          </select>
+        </form>
+      </div>
+
+      
+      
+      
+      <div class="lot-grid lot-grid--list">
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59995433" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/d4d612bc6c7cec9e58fb56cd71b0ddf0.jpg" alt="Denza Denza D9 2022 DM-i 970 AWD Flagship" loading="lazy" data-ph="Denza" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Denza Denza D9 2022 DM-i 970 AWD Flagship</div>
+    <div class="lot-card__specs">
+      <span>2022</span>
+      <span>56000 км</span>
+      <span>Hybrid</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">414 250 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 697 600 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/60013201" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/5bf322793771fcb66564ca7c2c50713a.jpg" alt="Porsche Cayenne 2019 Cayenne 3.0T" loading="lazy" data-ph="Porsche" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Porsche Cayenne 2019 Cayenne 3.0T</div>
+    <div class="lot-card__specs">
+      <span>2019</span>
+      <span>80000 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">490 250 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 817 812 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/60017759" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/ccfb89162f4fa76a41e8d0ae82a6ac76.jpg" alt="Mercedes-Benz Mercedes-Benz GLE 2021 GLE 450 4MATIC Fashion" loading="lazy" data-ph="Mercedes-Benz" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Mercedes-Benz Mercedes-Benz GLE 2021 GLE 450 4MATIC Fashion</div>
+    <div class="lot-card__specs">
+      <span>2021</span>
+      <span>70000 км</span>
+      <span>Gasoline + 48V Mild Hybrid System</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">624 750 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 950 200 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59376436" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/ed17c03fe3fb4fa40502aacf8db7cb97.jpg" alt="BMW BMW 4 Series 2014 420i Gran Coupe Luxury Design Package" loading="lazy" data-ph="BMW" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">BMW BMW 4 Series 2014 420i Gran Coupe Luxury Design Package</div>
+    <div class="lot-card__specs">
+      <span>2014</span>
+      <span>70500 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">113 875 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 347 344 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/60018188" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/0f02c80d9c4d61ac44eccebaec1bc31a.jpg" alt="Land Rover Discovery 2024 360PS Dynamic SE" loading="lazy" data-ph="Land Rover" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Land Rover Discovery 2024 360PS Dynamic SE</div>
+    <div class="lot-card__specs">
+      <span>2024</span>
+      <span>21000 км</span>
+      <span>Gasoline + 48V Mild Hybrid System</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">839 375 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 1 161 281 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59497065" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/24639f9209251267fab8c8fa24c1b2e8.jpg" alt="Subaru Forester 2022 2.0i AWD X Sport Edition with EyeSight" loading="lazy" data-ph="Subaru" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Subaru Forester 2022 2.0i AWD X Sport Edition with EyeSight</div>
+    <div class="lot-card__specs">
+      <span>2022</span>
+      <span>45000 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">415 750 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 699 400 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/60018398" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/17adc7ab1293e585c84c87004939292d.jpg" alt="Audi Audi A6L 2022 45 TFSI Premium Elegance" loading="lazy" data-ph="Audi" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Audi Audi A6L 2022 45 TFSI Premium Elegance</div>
+    <div class="lot-card__specs">
+      <span>2022</span>
+      <span>65000 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">379 625 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 656 050 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59960001" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/63b6ab04b35b924206e9fe641f4b3192.jpg" alt="BMW BMW X3 2022 xDrive25i M Sport Package" loading="lazy" data-ph="BMW" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">BMW BMW X3 2022 xDrive25i M Sport Package</div>
+    <div class="lot-card__specs">
+      <span>2022</span>
+      <span>40000 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">338 250 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 606 400 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59918199" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/250012c4e7f477a3507f44176f427a1e.jpg" alt="Mercedes-Benz Mercedes-Benz E-Class 2024 Model E 300 L Luxury" loading="lazy" data-ph="Mercedes-Benz" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Mercedes-Benz Mercedes-Benz E-Class 2024 Model E 300 L Luxury</div>
+    <div class="lot-card__specs">
+      <span>2024</span>
+      <span>63300 км</span>
+      <span>Gasoline + 48V Mild Hybrid System</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">639 875 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 931 856 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59948682" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/0e6fdc13232b15629a1bbc4d6e9aea9e.jpg" alt="Mercedes-Benz Mercedes-Benz C-Class 2025 Facelift C 260 L Night Sport Edition" loading="lazy" data-ph="Mercedes-Benz" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Mercedes-Benz Mercedes-Benz C-Class 2025 Facelift C 260 L Night Sport Edition</div>
+    <div class="lot-card__specs">
+      <span>2025</span>
+      <span>41000 км</span>
+      <span>Gasoline + 48V Mild Hybrid System</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">372 000 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 623 800 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59851948" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/d85fac2b4a53afbc79bce7018ea8e506.jpg" alt="Geely Emgrand 2015 Sedan 1.5L Manual Upward Edition" loading="lazy" data-ph="Geely" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Geely Emgrand 2015 Sedan 1.5L Manual Upward Edition</div>
+    <div class="lot-card__specs">
+      <span>2015</span>
+      <span>88200 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">17 000 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 226 250 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/60013585" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/fd22f9c96d664f54f1f1ff990f3d752d.jpg" alt="Porsche Macan 2021 Macan 2.0T" loading="lazy" data-ph="Porsche" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Porsche Macan 2021 Macan 2.0T</div>
+    <div class="lot-card__specs">
+      <span>2021</span>
+      <span>114940 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">284 375 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 541 750 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/60003303" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/d62090e9a6e32bf86bbe79720b35158b.jpg" alt="Chery Tiggo 7 2020 Model FLY 1.5T DCT Business Edition" loading="lazy" data-ph="Chery" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Chery Tiggo 7 2020 Model FLY 1.5T DCT Business Edition</div>
+    <div class="lot-card__specs">
+      <span>2020</span>
+      <span>42410 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">63 000 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 283 750 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/60013902" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/9396f749807621c6db6c690e0b70d50e.jpg" alt="Porsche Cayenne 2015 Cayenne 3.0T" loading="lazy" data-ph="Porsche" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Porsche Cayenne 2015 Cayenne 3.0T</div>
+    <div class="lot-card__specs">
+      <span>2015</span>
+      <span>188160 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">294 125 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 572 656 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/60014052" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/f405cd215a7c4e532f5a06c6b52c5f83.jpg" alt="BMW BMW 5 Series 2019 525Li Luxury Package" loading="lazy" data-ph="BMW" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">BMW BMW 5 Series 2019 525Li Luxury Package</div>
+    <div class="lot-card__specs">
+      <span>2019</span>
+      <span>52430 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">233 500 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 496 875 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/60014058" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/d361ea5b0005f4a149a3af9e9fae705b.jpg" alt="Denza Denza D9 2024 DM-i 980 AWD Prestige" loading="lazy" data-ph="Denza" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Denza Denza D9 2024 DM-i 980 AWD Prestige</div>
+    <div class="lot-card__specs">
+      <span>2024</span>
+      <span>45120 км</span>
+      <span>Hybrid</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">439 500 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 701 425 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/60014114" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/0bdf7e2e55328197122605bcc4f73ac1.jpg" alt="Citroën Citroën C4L 2014 1.8L Smart Drive Automatic Sport" loading="lazy" data-ph="Citroën" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Citroën Citroën C4L 2014 1.8L Smart Drive Automatic Sport</div>
+    <div class="lot-card__specs">
+      <span>2014</span>
+      <span>42690 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">25 875 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 237 344 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/60014143" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/3e7cc4fb56b0f9c65a7c77ca39a2989a.jpg" alt="Buick Envision S 2022 Envision S 652T 2WD Luxury" loading="lazy" data-ph="Buick" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Buick Envision S 2022 Envision S 652T 2WD Luxury</div>
+    <div class="lot-card__specs">
+      <span>2022</span>
+      <span>101000 км</span>
+      <span>Gasoline + 48V Mild Hybrid System</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">145 000 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 374 500 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/60014204" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/0a3b51c922fd2673354483ab04c2e251.jpg" alt="Buick Buick Excelle GT 2019 18T Automatic Connected Elite (China V)" loading="lazy" data-ph="Buick" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Buick Buick Excelle GT 2019 18T Automatic Connected Elite (China V)</div>
+    <div class="lot-card__specs">
+      <span>2019</span>
+      <span>63700 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">44 000 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 260 000 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59942986" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/0d53af07cff7d94e2386c2a698b58f69.jpg" alt="Mercedes-Benz Mercedes-Benz E-Class 2019 E 300 L Luxury" loading="lazy" data-ph="Mercedes-Benz" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Mercedes-Benz Mercedes-Benz E-Class 2019 E 300 L Luxury</div>
+    <div class="lot-card__specs">
+      <span>2019</span>
+      <span>109350 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">280 500 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 555 625 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/60014329" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/b2ef090ee1f3f2f3561b433e44a9e128.jpg" alt="Alfa Romeo Stelvio 2017 2.0T 200HP Elite" loading="lazy" data-ph="Alfa Romeo" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Alfa Romeo Stelvio 2017 2.0T 200HP Elite</div>
+    <div class="lot-card__specs">
+      <span>2017</span>
+      <span>127560 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">115 750 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 349 688 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59979910" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/2f521d8635ad06c4daae5dcee595d789.jpg" alt="Volkswagen Santana 2013 1.6L Manual Trend Edition" loading="lazy" data-ph="Volkswagen" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Volkswagen Santana 2013 1.6L Manual Trend Edition</div>
+    <div class="lot-card__specs">
+      <span>2013</span>
+      <span>146500 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">17 000 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 226 250 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59851945" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/79b48ef3f1413d9240ec700ed614eb4c.jpg" alt="Chevrolet Cruze 2011 1.6L SL MT" loading="lazy" data-ph="Chevrolet" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Chevrolet Cruze 2011 1.6L SL MT</div>
+    <div class="lot-card__specs">
+      <span>2011</span>
+      <span>48500 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">16 750 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 225 938 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59852184" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/a1ec083d07d4e8b49a206cdf63b80cf8.jpg" alt="Nissan Sunny 2011 1.5XE Manual Comfort Edition" loading="lazy" data-ph="Nissan" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Nissan Sunny 2011 1.5XE Manual Comfort Edition</div>
+    <div class="lot-card__specs">
+      <span>2011</span>
+      <span>99100 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">16 750 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 225 938 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59944252" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/04447fb6f5185d50cb4701eb54996d89.jpg" alt="Ford Focus 2012 Hatchback Classic 1.8L Auto Base" loading="lazy" data-ph="Ford" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Ford Focus 2012 Hatchback Classic 1.8L Auto Base</div>
+    <div class="lot-card__specs">
+      <span>2012</span>
+      <span>111900 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">16 750 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 225 938 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59665399" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/883ca970171926c4cc1386f1164dface.jpg" alt="Geely Vision 2015 1.5L Manual Elite" loading="lazy" data-ph="Geely" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Geely Vision 2015 1.5L Manual Elite</div>
+    <div class="lot-card__specs">
+      <span>2015</span>
+      <span>104900 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">16 750 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 225 938 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59820917" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/b1357f770c063afd4b62cdd80690cd40.jpg" alt="Chevrolet Aveo 2011 Hatchback 1.6L AT SX" loading="lazy" data-ph="Chevrolet" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Chevrolet Aveo 2011 Hatchback 1.6L AT SX</div>
+    <div class="lot-card__specs">
+      <span>2011</span>
+      <span>168200 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">16 750 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 225 938 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59968631" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/ed5ab69ace68a9619c3f5230371fcc78.jpg" alt="Geely Geely GX7 2013 2.0L Manual Progressive" loading="lazy" data-ph="Geely" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Geely Geely GX7 2013 2.0L Manual Progressive</div>
+    <div class="lot-card__specs">
+      <span>2013</span>
+      <span>168420 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">16 375 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 225 469 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59948859" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/8cc4e4768a4151c9c0356a91101baa70.jpg" alt="Chery Fengyun 2 2015 1.5L Manual Trend Edition" loading="lazy" data-ph="Chery" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Chery Fengyun 2 2015 1.5L Manual Trend Edition</div>
+    <div class="lot-card__specs">
+      <span>2015</span>
+      <span>86240 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">16 375 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 225 469 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59144485" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/d3f68fcbf539d45e68752f0616ea4114.jpg" alt="Peugeot Peugeot 308 2012 1.6L Automatic Premium Type" loading="lazy" data-ph="Peugeot" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Peugeot Peugeot 308 2012 1.6L Automatic Premium Type</div>
+    <div class="lot-card__specs">
+      <span>2012</span>
+      <span>19110 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">15 875 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 224 844 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/60012807" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/82e388ef59710f0d700dd2d5f81c5f21.jpg" alt="Peugeot Peugeot 308 2012 1.6L Automatic Premium Type" loading="lazy" data-ph="Peugeot" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Peugeot Peugeot 308 2012 1.6L Automatic Premium Type</div>
+    <div class="lot-card__specs">
+      <span>2012</span>
+      <span>141940 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">15 500 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 224 375 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59664287" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/113c21af2e384bb7ee785627e34dd9b7.jpg" alt="Everus Everus S1 2013 1.5L Manual Sport Edition" loading="lazy" data-ph="Everus" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Everus Everus S1 2013 1.5L Manual Sport Edition</div>
+    <div class="lot-card__specs">
+      <span>2013</span>
+      <span>90200 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">15 125 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 223 906 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59966270" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/b05bc470f72c90d3017832c6d6793d5d.jpg" alt="BYD BYD F3 2015 Energy-saving Edition 1.5L Manual Luxury" loading="lazy" data-ph="BYD" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">BYD BYD F3 2015 Energy-saving Edition 1.5L Manual Luxury</div>
+    <div class="lot-card__specs">
+      <span>2015</span>
+      <span>109000 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">15 125 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 223 906 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59975093" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/5591660558ca8e9cbb5655c382c4fe42.jpg" alt="Peugeot Peugeot 301 2014 1.6L Manual Comfort Edition" loading="lazy" data-ph="Peugeot" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Peugeot Peugeot 301 2014 1.6L Manual Comfort Edition</div>
+    <div class="lot-card__specs">
+      <span>2014</span>
+      <span>72100 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">14 875 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 223 594 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59821402" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/d48acea4f02e522edcd1deaed9f990e5.jpg" alt="BYD BYD F3 2012 Energy-saving Edition 1.5L Manual Comfort" loading="lazy" data-ph="BYD" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">BYD BYD F3 2012 Energy-saving Edition 1.5L Manual Comfort</div>
+    <div class="lot-card__specs">
+      <span>2012</span>
+      <span>70400 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">14 875 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 223 594 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59545910" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/93d956b0c7cead43785d206a076b1b04.jpg" alt="BYD BYD F3 2015 Energy-saving Edition 1.5L Manual Luxury" loading="lazy" data-ph="BYD" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">BYD BYD F3 2015 Energy-saving Edition 1.5L Manual Luxury</div>
+    <div class="lot-card__specs">
+      <span>2015</span>
+      <span>57200 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">14 875 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 223 594 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/60001900" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/b137a5d404358713606450dfe1877ac5.jpg" alt="Besturn Besturn B70 2014 2.0L Manual Luxury" loading="lazy" data-ph="Besturn" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Besturn Besturn B70 2014 2.0L Manual Luxury</div>
+    <div class="lot-card__specs">
+      <span>2014</span>
+      <span>121200 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">14 500 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 223 125 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59973120" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/26107b7195829e6acb1e3f21ebfff736.jpg" alt="Volkswagen Passat Lingyu 2009 2.0L MFI Manual Premium" loading="lazy" data-ph="Volkswagen" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Volkswagen Passat Lingyu 2009 2.0L MFI Manual Premium</div>
+    <div class="lot-card__specs">
+      <span>2009</span>
+      <span>132660 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">14 500 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 223 125 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59823885" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/06e10dd6419a81e426a0a4f8271b73b8.jpg" alt="Haima Haima M3 2016 1.5L Manual Fashion" loading="lazy" data-ph="Haima" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Haima Haima M3 2016 1.5L Manual Fashion</div>
+    <div class="lot-card__specs">
+      <span>2016</span>
+      <span>80100 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">14 250 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 222 812 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59374460" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/ad175aea2cdf8e4e75d42b271a3230ec.jpg" alt="Chevrolet Cruze 2015 1.5L Classic SL MT" loading="lazy" data-ph="Chevrolet" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Chevrolet Cruze 2015 1.5L Classic SL MT</div>
+    <div class="lot-card__specs">
+      <span>2015</span>
+      <span>163600 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">13 875 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 222 344 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59464608" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/f80c028b3487959d0bbbedd54438c692.jpg" alt="Geely King Kong Fortune 2012 1.5L Elite" loading="lazy" data-ph="Geely" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Geely King Kong Fortune 2012 1.5L Elite</div>
+    <div class="lot-card__specs">
+      <span>2012</span>
+      <span>54200 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">13 000 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 221 250 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59992058" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/452ac6c329f4c2fd2cc948378707201a.jpg" alt="Volkswagen Passat 2022 330TSI Elite Edition" loading="lazy" data-ph="Volkswagen" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Volkswagen Passat 2022 330TSI Elite Edition</div>
+    <div class="lot-card__specs">
+      <span>2022</span>
+      <span>49000 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">180 500 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 417 100 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/60011051" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/dd652e40053385cc03ceb22acb88f1b3.jpg" alt="Mercedes-Benz Mercedes-Benz GLB 2021 GLB 200 Style" loading="lazy" data-ph="Mercedes-Benz" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Mercedes-Benz Mercedes-Benz GLB 2021 GLB 200 Style</div>
+    <div class="lot-card__specs">
+      <span>2021</span>
+      <span>26320 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">192 500 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 431 500 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59980314" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/8df0208a08788ffa1741022e9e5912f7.jpg" alt="BMW BMW X5 (Import) 2018 xDrive35i M Sport Luxury Model" loading="lazy" data-ph="BMW" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">BMW BMW X5 (Import) 2018 xDrive35i M Sport Luxury Model</div>
+    <div class="lot-card__specs">
+      <span>2018</span>
+      <span>51160 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">348 875 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 641 094 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/60000799" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/fc9ebca45c995e26497a209e7a28285f.jpg" alt="Mercedes-Benz Mercedes-Benz GLC Coupe 2020 GLC 260 4MATIC Coupe SUV" loading="lazy" data-ph="Mercedes-Benz" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Mercedes-Benz Mercedes-Benz GLC Coupe 2020 GLC 260 4MATIC Coupe SUV</div>
+    <div class="lot-card__specs">
+      <span>2020</span>
+      <span>80490 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">272 625 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 545 781 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59931232" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/803edcb41f750b1e8eb3ffcaeb2e65c1.jpg" alt="BMW BMW 5 Series 2014 525Li Luxury Design Package" loading="lazy" data-ph="BMW" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">BMW BMW 5 Series 2014 525Li Luxury Design Package</div>
+    <div class="lot-card__specs">
+      <span>2014</span>
+      <span>206510 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">80 000 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 305 000 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/60013422" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/9c2d318acb6dea89025e1a1a8acab319.jpg" alt="Tesla Model Y 2022 Facelift Rear-Wheel Drive Version" loading="lazy" data-ph="Tesla" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Tesla Model Y 2022 Facelift Rear-Wheel Drive Version</div>
+    <div class="lot-card__specs">
+      <span>2022</span>
+      <span>117680 км</span>
+      <span>Pure Electric</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">264 750 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 518 200 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/60013447" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/ab5b6ab95bb606c39c122fa6cc0bad9c.jpg" alt="BMW BMW X3 2020 xDrive28i Luxury Package" loading="lazy" data-ph="BMW" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">BMW BMW X3 2020 xDrive28i Luxury Package</div>
+    <div class="lot-card__specs">
+      <span>2020</span>
+      <span>96970 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">235 500 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 499 375 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59975770" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/8df9763f324ca9bf9cc9908e7d10eb70.jpg" alt="Buick LaCrosse 2013 3.0L SIDI V6 Intelligent Flagship" loading="lazy" data-ph="Buick" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Buick LaCrosse 2013 3.0L SIDI V6 Intelligent Flagship</div>
+    <div class="lot-card__specs">
+      <span>2013</span>
+      <span>20000 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">132 625 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 370 781 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59993850" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/221ff09b483677e8fc130543467bb7b6.jpg" alt="Cadillac Cadillac ATS-L 2017 28T Fashion" loading="lazy" data-ph="Cadillac" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Cadillac Cadillac ATS-L 2017 28T Fashion</div>
+    <div class="lot-card__specs">
+      <span>2017</span>
+      <span>159260 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">72 500 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 295 625 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59992342" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/3924e3cf4d6bcd3886ff29ba1cedbf36.jpg" alt="Xiangjie Enjoy World S9T 2025 Model Pure Electric AWD" loading="lazy" data-ph="Xiangjie" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Xiangjie Enjoy World S9T 2025 Model Pure Electric AWD</div>
+    <div class="lot-card__specs">
+      <span>2025</span>
+      <span>8240 км</span>
+      <span>Pure Electric</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">549 625 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 828 069 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/60013621" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/f02fbfa65345e07faf64e5dd913cfbf8.jpg" alt="Cadillac Cadillac XT6 2022 2.0T 6-Seater 4WD Luxury Edition" loading="lazy" data-ph="Cadillac" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Cadillac Cadillac XT6 2022 2.0T 6-Seater 4WD Luxury Edition</div>
+    <div class="lot-card__specs">
+      <span>2022</span>
+      <span>61800 км</span>
+      <span>Gasoline + 48V Mild Hybrid System</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">323 500 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 588 700 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/60013192" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/a934840ef51b59992ad34f9688a03cb1.jpg" alt="Tesla Model Y 2025 Model Rear-Wheel Drive Launch Edition" loading="lazy" data-ph="Tesla" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Tesla Model Y 2025 Model Rear-Wheel Drive Launch Edition</div>
+    <div class="lot-card__specs">
+      <span>2025</span>
+      <span>58970 км</span>
+      <span>Pure Electric</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">368 375 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 619 631 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59985601" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/5b7382f997ca641bb82543a6c7bc6859.jpg" alt="Audi Audi A6L 2022 45 TFSI Premium Elegance" loading="lazy" data-ph="Audi" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Audi Audi A6L 2022 45 TFSI Premium Elegance</div>
+    <div class="lot-card__specs">
+      <span>2022</span>
+      <span>65000 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">392 875 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 671 950 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/60013270" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/91f2b8eac017ea455fa67da4e0adab9b.jpg" alt="Mercedes-Benz Mercedes-Benz C-Class 2016 C 200 L Sport" loading="lazy" data-ph="Mercedes-Benz" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Mercedes-Benz Mercedes-Benz C-Class 2016 C 200 L Sport</div>
+    <div class="lot-card__specs">
+      <span>2016</span>
+      <span>140150 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">141 250 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 381 562 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/60013286" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/25945d5080074b2cb2f9a69c92a4c667.jpg" alt="Porsche Macan 2017 Macan S 3.0T" loading="lazy" data-ph="Porsche" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Porsche Macan 2017 Macan S 3.0T</div>
+    <div class="lot-card__specs">
+      <span>2017</span>
+      <span>116920 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">211 875 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 469 844 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59999853" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/f2a25935aa9c10abd197ade32ce89912.jpg" alt="Ford Explorer 2024 2.3T EcoBoost Kunlun Summit Edition 7-Seater" loading="lazy" data-ph="Ford" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Ford Explorer 2024 2.3T EcoBoost Kunlun Summit Edition 7-Seater</div>
+    <div class="lot-card__specs">
+      <span>2024</span>
+      <span>9470 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">582 000 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 865 300 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59919849" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/5bf5ea60aaa7611e7b3d815e093f8e68.jpg" alt="Xiaomi Auto Xiaomi SU7 2024 AWD Extended Range Advanced Smart Driving Max Edition" loading="lazy" data-ph="Xiaomi" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Xiaomi Auto Xiaomi SU7 2024 AWD Extended Range Advanced Smart Driving Max Edition</div>
+    <div class="lot-card__specs">
+      <span>2024</span>
+      <span>36000 км</span>
+      <span>Pure Electric</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">425 250 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 685 038 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59917051" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/a63cd4c48acdbbf60a4730d3135ffc10.jpg" alt="Volvo Volvo XC90 2019 T6 Smart Edition 7-seater (China V)" loading="lazy" data-ph="Volvo" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Volvo Volvo XC90 2019 T6 Smart Edition 7-seater (China V)</div>
+    <div class="lot-card__specs">
+      <span>2019</span>
+      <span>185440 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">202 125 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 457 656 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59999959" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/517dcb25372fd4196809fd1a08696e3e.jpg" alt="Mercedes-Benz Mercedes-Benz CLS 2018 CLS 300 Dynamic" loading="lazy" data-ph="Mercedes-Benz" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Mercedes-Benz Mercedes-Benz CLS 2018 CLS 300 Dynamic</div>
+    <div class="lot-card__specs">
+      <span>2018</span>
+      <span>49060 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">372 375 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 670 469 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/60001768" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/0925c0ee9043147bc46fa5ed466ce649.jpg" alt="Buick Excelle 2021 Facelift 1.3T Auto Mild Hybrid Elite" loading="lazy" data-ph="Buick" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Buick Excelle 2021 Facelift 1.3T Auto Mild Hybrid Elite</div>
+    <div class="lot-card__specs">
+      <span>2021</span>
+      <span>46140 км</span>
+      <span>Gasoline + 48V Mild Hybrid System</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">51 500 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 262 300 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59659799" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/e613e0c67b94dac06edb4778f9e27247.jpg" alt="Volkswagen ID.ERA" loading="lazy" data-ph="Volkswagen" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Volkswagen ID.ERA</div>
+    <div class="lot-card__specs">
+      <span>2026</span>
+      <span>9000 км</span>
+      <span>Range Extender</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">607 625 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 894 769 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59893027" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/d187c673f0a92aafd5acfb714f857e12.jpg" alt="Volkswagen Magotan 2017 Model 380TSI DSG Flagship Version" loading="lazy" data-ph="Volkswagen" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Volkswagen Magotan 2017 Model 380TSI DSG Flagship Version</div>
+    <div class="lot-card__specs">
+      <span>2017</span>
+      <span>69800 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">162 125 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 407 656 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/60007382" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/2e7c6dd9db205da946807170c58c49d8.jpg" alt="Nissan Teana 2022 2.0T XV Premium Edition" loading="lazy" data-ph="Nissan" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Nissan Teana 2022 2.0T XV Premium Edition</div>
+    <div class="lot-card__specs">
+      <span>2022</span>
+      <span>19500 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">189 625 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 428 050 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59975677" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/76fff5f194c25904d1db084cfa2b031a.jpg" alt="Mercedes-Benz Mercedes-Benz CLS 2018 CLS 300 Luxury" loading="lazy" data-ph="Mercedes-Benz" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Mercedes-Benz Mercedes-Benz CLS 2018 CLS 300 Luxury</div>
+    <div class="lot-card__specs">
+      <span>2018</span>
+      <span>60000 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">359 125 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 653 906 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59972132" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/b36d8e24e8c85ab8b5418a2e87a22a6e.jpg" alt="BYD Song Ultra" loading="lazy" data-ph="BYD" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">BYD Song Ultra</div>
+    <div class="lot-card__specs">
+      <span>2026</span>
+      <span>4900 км</span>
+      <span>Hybrid</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">233 375 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 464 381 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59904758" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/7a5328ba9af9afd2747fd61c6786447e.jpg" alt="Porsche Cayenne 2016 Cayenne 3.0T" loading="lazy" data-ph="Porsche" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Porsche Cayenne 2016 Cayenne 3.0T</div>
+    <div class="lot-card__specs">
+      <span>2016</span>
+      <span>103000 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">281 250 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 556 562 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59462519" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/36523f1e52a9dd636e4bddcfec26bb2a.jpg" alt="Subaru Subaru BRZ 2022 2.4L Auto EyeSight" loading="lazy" data-ph="Subaru" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Subaru Subaru BRZ 2022 2.4L Auto EyeSight</div>
+    <div class="lot-card__specs">
+      <span>2022</span>
+      <span>44000 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">377 750 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 653 800 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59986690" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/51961b2ce9c2f30c92de97134625f56b.jpg" alt="Buick Envision Plus 2020 28T AWD Elite" loading="lazy" data-ph="Buick" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Buick Envision Plus 2020 28T AWD Elite</div>
+    <div class="lot-card__specs">
+      <span>2020</span>
+      <span>54200 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">132 625 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 370 781 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59954291" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/c47b8c2e69bb0344af1b5d4abbbc5fc2.jpg" alt="Audi Audi S4 2018 S4 3.0TFSI" loading="lazy" data-ph="Audi" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Audi Audi S4 2018 S4 3.0TFSI</div>
+    <div class="lot-card__specs">
+      <span>2018</span>
+      <span>70900 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">258 250 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 527 812 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/60007101" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/46d5143ca89222d42f3c1cfdfa20259c.jpg" alt="MG MG ZS 2020 180DVVT Automatic Lite" loading="lazy" data-ph="MG" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">MG MG ZS 2020 180DVVT Automatic Lite</div>
+    <div class="lot-card__specs">
+      <span>2020</span>
+      <span>50000 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">54 750 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 273 438 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59230161" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/ba0b94b9effc48bc4deb965be89614fc.jpg" alt="BMW BMW X4 2022 Facelift xDrive 30i M Sport Shadow Edition" loading="lazy" data-ph="BMW" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">BMW BMW X4 2022 Facelift xDrive 30i M Sport Shadow Edition</div>
+    <div class="lot-card__specs">
+      <span>2022</span>
+      <span>43100 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">408 500 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 690 700 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59861735" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/b4f88ec9963f831482463ae31facd396.jpg" alt="MINI MINI JCW 2018 2.0T JOHN COOPER WORKS" loading="lazy" data-ph="MINI" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">MINI MINI JCW 2018 2.0T JOHN COOPER WORKS</div>
+    <div class="lot-card__specs">
+      <span>2018</span>
+      <span>43200 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">258 000 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 527 500 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59722906" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/56ebd5b192ba343cda63914148e8a6c8.jpg" alt="Jaguar Jaguar XJ 2018 XJL 3.0 SC 2WD Elegant Business Edition" loading="lazy" data-ph="Jaguar" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Jaguar Jaguar XJ 2018 XJL 3.0 SC 2WD Elegant Business Edition</div>
+    <div class="lot-card__specs">
+      <span>2018</span>
+      <span>101900 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">252 375 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 520 469 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59943723" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/f45468bb6a6e32c2574b82d941c1867d.jpg" alt="Audi Audi A7L 2022 45 TFSI quattro S-line Wind Rider" loading="lazy" data-ph="Audi" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Audi Audi A7L 2022 45 TFSI quattro S-line Wind Rider</div>
+    <div class="lot-card__specs">
+      <span>2022</span>
+      <span>45000 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">360 625 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 633 250 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59574597" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/37f72b569465ca6d6f933337314cd062.jpg" alt="Jaguar Jaguar F-PACE 2021 250PS R-Dynamic SE" loading="lazy" data-ph="Jaguar" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Jaguar Jaguar F-PACE 2021 250PS R-Dynamic SE</div>
+    <div class="lot-card__specs">
+      <span>2021</span>
+      <span>34000 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">301 875 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 562 750 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59983901" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/9f508139e3a18ed1b0b2a12e17ff5ba8.jpg" alt="MINI MINI CLUBMAN 2018 2.0T COOPER S Classic" loading="lazy" data-ph="MINI" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">MINI MINI CLUBMAN 2018 2.0T COOPER S Classic</div>
+    <div class="lot-card__specs">
+      <span>2018</span>
+      <span>99900 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">172 500 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 420 625 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59994480" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/dc8a423aa56272e1226c3be43d3d9772.jpg" alt="Porsche Cayenne 2018 Cayenne 3.0T" loading="lazy" data-ph="Porsche" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Porsche Cayenne 2018 Cayenne 3.0T</div>
+    <div class="lot-card__specs">
+      <span>2018</span>
+      <span>109200 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">459 375 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 779 219 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59806624" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/04f2ce30e5cdb28092f9397f446636cb.jpg" alt="Audi Audi Q7 New Energy 2019 55 e-tron" loading="lazy" data-ph="Audi" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Audi Audi Q7 New Energy 2019 55 e-tron</div>
+    <div class="lot-card__specs">
+      <span>2019</span>
+      <span>81600 км</span>
+      <span>Hybrid</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">284 625 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 560 781 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59983670" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/0811428b6b9b0875e98c0638a2fc6c5c.jpg" alt="Toyota Highlander 2026 2.5L Smart Hybrid 4WD Luxury 7-Seater" loading="lazy" data-ph="Toyota" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Toyota Highlander 2026 2.5L Smart Hybrid 4WD Luxury 7-Seater</div>
+    <div class="lot-card__specs">
+      <span>2026</span>
+      <span>11000 км</span>
+      <span>Hybrid</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">461 375 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 726 581 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/60005382" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/167dbd80066896d2c20b8ecc8c2b2686.jpg" alt="Audi Audi A7 2018 50 TFSI quattro Comfort" loading="lazy" data-ph="Audi" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Audi Audi A7 2018 50 TFSI quattro Comfort</div>
+    <div class="lot-card__specs">
+      <span>2018</span>
+      <span>61000 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">341 625 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 632 031 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <div class="lot-card__placeholder">Haval</div>
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Haval Jolion 2023 1.5T</div>
+    <div class="lot-card__specs">
+      <span>2023</span>
+      <span>21000 км</span>
+      <span>бензин</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">1 062 500 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 1 417 875 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <div class="lot-card__placeholder">Changan</div>
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Changan CS75 2022 1.5T</div>
+    <div class="lot-card__specs">
+      <span>2022</span>
+      <span>32000 км</span>
+      <span>бензин</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">975 000 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 1 370 500 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <div class="lot-card__placeholder">Geely</div>
+    <span class="lot-card__flag">🇨🇳</span>
+    
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Geely Coolray 2021 1.5T</div>
+    <div class="lot-card__specs">
+      <span>2021</span>
+      <span>39000 км</span>
+      <span>бензин</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">900 000 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 1 280 500 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+      </div>
+      
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__grid">
+    <div>
+      <div class="logo logo--footer">АвтоПригон<span class="logo__dot">.</span></div>
+      <p class="footer__text">Пригон автомобилей из Кореи, США и Китая под ключ. Прозрачная смета, договор, отчёт на каждом этапе.</p>
+    </div>
+    <div>
+      <div class="footer__title">Разделы</div>
+      <a href="about.html">О нас</a>
+      <a href="examples.html">Примеры работ</a>
+      <a href="catalog.html">Каталоги</a>
+      <a href="calculator.html">Калькулятор</a>
+      <a href="reviews.html">Отзывы</a>
+    </div>
+    <div>
+      <div class="footer__title">Контакты</div>
+      <a href="tel:+7(900)000-00-00">+7 (900) 000-00-00</a>
+      <a href="mailto:info@example.ru">info@example.ru</a>
+      <span>Телеграм: @autoprigon</span>
+      <span>Москва</span>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <span>© АвтоПригон, 2026</span>
+    
+  </div>
+</footer>
+  <script src="static/js/api-data.js"></script>
+  <script src="static/js/demo.js"></script>
+  <script src="static/js/app.js"></script>
+</body>
+</html>

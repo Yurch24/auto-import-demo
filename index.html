@@ -1,0 +1,1513 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>АвтоПригон — пригон авто из Кореи, США и Китая</title>
+  <meta name="description" content="Пригон автомобилей из Кореи, США и Китая под ключ. Каталоги, калькулятор стоимости, отзывы.">
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="icon" href="static/favicon.svg" type="image/svg+xml">
+  <meta name="robots" content="noindex, follow">
+</head>
+<body>
+<header class="header">
+  <div class="container header__inner">
+    <a class="logo" href="index.html">АвтоПригон<span class="logo__dot">.</span></a>
+    <nav class="nav" id="main-nav">
+      <a href="about.html" class="nav__link ">О нас</a>
+      <a href="examples.html" class="nav__link ">Примеры</a>
+      <a href="catalog.html" class="nav__link ">Каталоги</a>
+      <a href="reviews.html" class="nav__link ">Отзывы</a>
+      <a href="calculator.html" class="nav__link ">Калькулятор</a>
+      <a href="contacts.html" class="nav__link ">Контакты</a>
+    </nav>
+    <a class="btn btn--outline header__phone" href="tel:+7(900)000-00-00">+7 (900) 000-00-00</a>
+    <button class="burger" id="burger" aria-label="Меню" type="button">☰</button>
+  </div>
+</header>
+
+
+
+<main>
+<section class="hero">
+  <div class="container">
+    <h1 class="hero__title">Пригон автомобилей под ключ<br>из Кореи, США и Китая</h1>
+
+    <form class="finder finder--bid" action="catalog.html" method="get" id="hero-finder" data-count-url="/api/lots/count" data-meta-url="/api/filter/meta" data-models='{&#34;Alfa Romeo&#34;: [&#34;Stelvio&#34;], &#34;Audi&#34;: [&#34;A4&#34;, &#34;A5&#34;, &#34;A6&#34;, &#34;A6L&#34;, &#34;A7&#34;, &#34;A7L&#34;, &#34;A8&#34;, &#34;New A6&#34;, &#34;Q7&#34;, &#34;Q7 New Energy&#34;, &#34;S4&#34;], &#34;BMW&#34;: [&#34;1 Series&#34;, &#34;2 Series Active Tourer&#34;, &#34;2 Series Gran Coupe&#34;, &#34;3 Series&#34;, &#34;4 Series&#34;, &#34;5 Series&#34;, &#34;5 Series GT&#34;, &#34;6 Series GT&#34;, &#34;8 Series&#34;, &#34;M3&#34;, &#34;M4&#34;, &#34;M5&#34;, &#34;X1&#34;, &#34;X2&#34;, &#34;X3&#34;, &#34;X4&#34;, &#34;X5&#34;, &#34;X5 (Import)&#34;, &#34;X6&#34;, &#34;X7&#34;, &#34;i4&#34;, &#34;iX3&#34;], &#34;BYD&#34;: [&#34;F3&#34;, &#34;Song Ultra&#34;], &#34;Besturn&#34;: [&#34;B70&#34;], &#34;Buick&#34;: [&#34;Envision Plus&#34;, &#34;Envision S&#34;, &#34;Excelle&#34;, &#34;Excelle GT&#34;, &#34;LaCrosse&#34;], &#34;Cadillac&#34;: [&#34;ATS-L&#34;, &#34;CT6&#34;, &#34;XT5&#34;, &#34;XT6&#34;], &#34;Changan&#34;: [&#34;CS75&#34;], &#34;Chery&#34;: [&#34;Fengyun 2&#34;, &#34;Tiggo 7&#34;], &#34;Chevrolet&#34;: [&#34;All-New Malibu&#34;, &#34;Aveo&#34;, &#34;Camaro&#34;, &#34;Cruze&#34;, &#34;Impala&#34;, &#34;Malibu&#34;, &#34;New Malibu&#34;, &#34;New Spark&#34;, &#34;New Trax&#34;, &#34;New abeo -door Sedan&#34;, &#34;New teureilbeulRanger&#34;, &#34;Spark&#34;, &#34;Traverse&#34;, &#34;Trax&#34;, &#34;Trax keuroseuobeo&#34;, &#34;kaeptiba&#34;, &#34;nekseuteu Spark&#34;, &#34;olrando&#34;, &#34;rieAll-New Colorado&#34;, &#34;teureilbeulRanger&#34;], &#34;Citroën&#34;: [&#34;C4L&#34;], &#34;Denza&#34;: [&#34;D9&#34;], &#34;Dodge&#34;: [&#34;Charger&#34;], &#34;Everus&#34;: [&#34;S1&#34;], &#34;Ford&#34;: [&#34;Edge&#34;, &#34;Escape&#34;, &#34;Explorer&#34;, &#34;Explorer 6 Gen&#34;, &#34;Focus&#34;, &#34;Fusion&#34;, &#34;Mustang&#34;, &#34;beurotko 6 Gen&#34;, &#34;meoseutaet 7 Gen&#34;], &#34;Geely&#34;: [&#34;Coolray&#34;, &#34;Emgrand&#34;, &#34;GX7&#34;, &#34;King Kong Fortune&#34;, &#34;Vision&#34;], &#34;Genesis&#34;: [&#34;EQ900&#34;, &#34;G70&#34;, &#34;G80&#34;, &#34;G90&#34;, &#34;GV70&#34;, &#34;GV80&#34;, &#34;New G70&#34;], &#34;Haima&#34;: [&#34;M3&#34;], &#34;Haval&#34;: [&#34;Jolion&#34;], &#34;Honda&#34;: [&#34;eokodeu 10 Gen&#34;, &#34;sibik&#34;], &#34;Hyundai&#34;: [&#34;All-New Tucson&#34;, &#34;Avante&#34;, &#34;Avante AD&#34;, &#34;Casper&#34;, &#34;Casper ilrekteurik&#34;, &#34;Equus&#34;, &#34;Genesis DH&#34;, &#34;Grandeur&#34;, &#34;Grandeur HG&#34;, &#34;Grandeur Hybrid&#34;, &#34;Grandeur IG&#34;, &#34;Grandeur IG Hybrid&#34;, &#34;Ioniq 5&#34;, &#34;Ioniq 6&#34;, &#34;Kona&#34;, &#34;LF Sonata&#34;, &#34;LF Sonata Hybrid&#34;, &#34;New Maextro&#34;, &#34;New Palisade&#34;, &#34;New geuraendeu seutarekseu&#34;, &#34;Palisade&#34;, &#34;Santa Fe&#34;, &#34;Santa Fe DM&#34;, &#34;Santa Fe TM&#34;, &#34;Santa Fe peuraim&#34;, &#34;Sonata&#34;, &#34;Sonata Hybrid&#34;, &#34;Staria&#34;, &#34;Tucson&#34;, &#34;Tucson Hybrid&#34;, &#34;aionik ilrekteurik&#34;, &#34;aseulran&#34;, &#34;eksenteu&#34;, &#34;geuraendeu seutarekseu&#34;, &#34;neksso&#34;], &#34;Jaguar&#34;: [&#34;F-PACE&#34;, &#34;XF&#34;, &#34;XJ&#34;], &#34;Jeep&#34;: [&#34;Grand Cherokee&#34;, &#34;Renegade&#34;, &#34;Wrangler&#34;, &#34;cheroki&#34;, &#34;geulraedieiteo&#34;, &#34;keompaeseu 2nd Gen&#34;], &#34;KG Mobility&#34;: [&#34;All-New Rexton&#34;, &#34;G4 Rexton&#34;, &#34;Korando Sport&#34;, &#34;New Rexton Sport&#34;, &#34;New Rexton Sport kan&#34;, &#34;New seutail Korando C&#34;, &#34;Rexton Sport&#34;, &#34;Tivoli&#34;, &#34;Tivoli Air&#34;, &#34;Tivoli ameo&#34;, &#34;aektieon 2nd Gen&#34;, &#34;beri New Tivoli&#34;, &#34;byutipul Korando&#34;, &#34;toreseu&#34;], &#34;Kia&#34;: [&#34;All-New Carens&#34;, &#34;All-New Carnival&#34;, &#34;All-New K3&#34;, &#34;All-New K7&#34;, &#34;All-New Morning&#34;, &#34;All-New Sorento&#34;, &#34;All-New Soul&#34;, &#34;Carnival&#34;, &#34;Carnival 4th Gen&#34;, &#34;Carnival R&#34;, &#34;EV6&#34;, &#34;EV9&#34;, &#34;K3 kup&#34;, &#34;K5&#34;, &#34;K5 2nd Gen&#34;, &#34;K5 3rd Gen&#34;, &#34;K7&#34;, &#34;K7 peurimieo&#34;, &#34;K8&#34;, &#34;K8 Hybrid&#34;, &#34;K9&#34;, &#34;K9 2nd Gen&#34;, &#34;Mohave&#34;, &#34;Mohave maseuteo&#34;, &#34;Morning&#34;, &#34;New K3&#34;, &#34;New K3 2nd Gen&#34;, &#34;New K8 Hybrid&#34;, &#34;New Ray&#34;, &#34;New Seltos&#34;, &#34;New Sorento R&#34;, &#34;New gia Ray&#34;, &#34;Niro&#34;, &#34;Niro EV&#34;, &#34;PV5&#34;, &#34;Ray&#34;, &#34;Seltos&#34;, &#34;Sorento&#34;, &#34;Sorento 4th Gen&#34;, &#34;Sportage 4th Gen&#34;, &#34;Sportage 5th Gen&#34;, &#34;Sportage 5th Gen Hybrid&#34;, &#34;Sportage R&#34;, &#34;Sportage boldeu&#34;, &#34;Stinger&#34;, &#34;Stinger maiseuteo&#34;, &#34;Stonic&#34;, &#34;di All-New Niro&#34;, &#34;taseuman&#34;], &#34;Lamborghini&#34;: [&#34;uruseu&#34;], &#34;Land Rover&#34;: [&#34;Discovery&#34;, &#34;Discovery 5&#34;, &#34;Discovery Sport&#34;, &#34;Discovery Sport 2nd Gen&#34;, &#34;Range Rover 5th Gen&#34;, &#34;Range Rover Evoque 2nd Gen&#34;, &#34;Range Rover Sport 2nd Gen&#34;, &#34;Range Rover Velar&#34;, &#34;dipen&#34;], &#34;Lincoln&#34;: [&#34;ebieiteo 2nd Gen&#34;, &#34;koseeo&#34;, &#34;nebigeiteo 4th Gen&#34;, &#34;notilreoseu 2nd Gen&#34;], &#34;MG&#34;: [&#34;ZS&#34;], &#34;MINI&#34;: [&#34;CLUBMAN&#34;, &#34;Cooper&#34;, &#34;Cooper Clubman&#34;, &#34;Cooper Countryman&#34;, &#34;Cooper S&#34;, &#34;Cooper S Clubman&#34;, &#34;Cooper S Countryman&#34;, &#34;Cooper S Countryman 3rd Gen&#34;, &#34;JCW&#34;, &#34;eiseumaen 1st Gen&#34;], &#34;Mercedes-Benz&#34;: [&#34;AMG GT&#34;, &#34;C-Class&#34;, &#34;C-Class W205&#34;, &#34;C-Class W206&#34;, &#34;CLA-Class C117&#34;, &#34;CLE-Class C236&#34;, &#34;CLS&#34;, &#34;CLS-Class C257&#34;, &#34;E-Class&#34;, &#34;E-Class W213&#34;, &#34;E-Class W214&#34;, &#34;EQC N293&#34;, &#34;EQE SUV X294&#34;, &#34;EQS SUV X296&#34;, &#34;EQS V297&#34;, &#34;G-Class W463b&#34;, &#34;G-Class W465&#34;, &#34;GLA-Class&#34;, &#34;GLA-Class H247&#34;, &#34;GLA-Class X156&#34;, &#34;GLB&#34;, &#34;GLB-Class X247&#34;, &#34;GLC Coupe&#34;, &#34;GLC-Class X253&#34;, &#34;GLC-Class X254&#34;, &#34;GLE&#34;, &#34;GLE-Class&#34;, &#34;GLE-Class W166&#34;, &#34;GLE-Class W167&#34;, &#34;GLS-Class X167&#34;, &#34;Metris&#34;, &#34;S-Class W222&#34;, &#34;S-Class W223&#34;, &#34;SL-Class R232&#34;], &#34;Nissan&#34;: [&#34;Sunny&#34;, &#34;Teana&#34;], &#34;Peugeot&#34;: [&#34;301&#34;, &#34;308&#34;], &#34;Porsche&#34;: [&#34;911&#34;, &#34;Cayenne&#34;, &#34;Macan&#34;, &#34;Panamera&#34;], &#34;Renault Korea&#34;: [&#34;New QM6&#34;, &#34;New SM6&#34;, &#34;NewQM5&#34;, &#34;NewSM5 peulraetineom&#34;, &#34;QM3&#34;, &#34;SM6&#34;, &#34;SM7 New Art&#34;, &#34;XM3&#34;, &#34;areukana&#34;, &#34;geukolreoseu&#34;, &#34;kaepcheo&#34;], &#34;Subaru&#34;: [&#34;BRZ&#34;, &#34;Forester&#34;], &#34;Tesla&#34;: [&#34;Model Y&#34;, &#34;model 3&#34;, &#34;model Y&#34;], &#34;Toyota&#34;: [&#34;Camry&#34;, &#34;Highlander&#34;, &#34;Prius 4th Gen&#34;, &#34;keuraun keuroseuobeo&#34;, &#34;siena 4th Gen&#34;], &#34;Volkswagen&#34;: [&#34;ID.ERA&#34;, &#34;Magotan&#34;, &#34;Passat&#34;, &#34;Passat Lingyu&#34;, &#34;Santana&#34;, &#34;Tiguan&#34;, &#34;ateon&#34;, &#34;golpeu 8 Gen&#34;, &#34;jeta 7 Gen&#34;, &#34;tiguan 2nd Gen&#34;, &#34;tiguan olseupeiseu&#34;, &#34;tuarek 3rd Gen&#34;], &#34;Volvo&#34;: [&#34;S60 3rd Gen&#34;, &#34;S90&#34;, &#34;V40 keuroseukeonteuri&#34;, &#34;XC40&#34;, &#34;XC60 2nd Gen&#34;, &#34;XC90&#34;, &#34;XC90 2nd Gen&#34;], &#34;Xiangjie&#34;: [&#34;Enjoy World S9T&#34;], &#34;Xiaomi&#34;: [&#34;Auto Xiaomi SU7&#34;]}'>
+      <div class="finder__tabs finder__tabs--vehicle" role="tablist">
+        <button type="button" class="finder__tab is-active" data-vehicle="car" role="tab" aria-selected="true">Автомобиль</button>
+        <button type="button" class="finder__tab" data-vehicle="moto" role="tab" aria-selected="false">Мотоцикл</button>
+        <input type="hidden" name="vehicle" value="car">
+      </div>
+      <div class="finder__tabs" role="tablist">
+        <button type="button" class="finder__tab is-active" data-src="all" role="tab">Все каталоги</button>
+        <button type="button" class="finder__tab" data-src="encar" role="tab">🇰🇷 Корея</button>
+        <button type="button" class="finder__tab" data-src="bidcars" role="tab">🇺🇸 США</button>
+        <button type="button" class="finder__tab" data-src="che168" role="tab">🇨🇳 Китай</button>
+        <input type="hidden" name="src" id="hero-src" value="all">
+      </div>
+
+      <div class="finder__row">
+        <label class="finder__select">
+          <span class="sr-only">Марка</span>
+          <select name="make" id="hero-make">
+            <option value="">Все марки</option>
+            <option value="Alfa Romeo">Alfa Romeo</option><option value="Audi">Audi</option><option value="BMW">BMW</option><option value="BYD">BYD</option><option value="Besturn">Besturn</option><option value="Buick">Buick</option><option value="Cadillac">Cadillac</option><option value="Changan">Changan</option><option value="Chery">Chery</option><option value="Chevrolet">Chevrolet</option><option value="Citroën">Citroën</option><option value="Denza">Denza</option><option value="Dodge">Dodge</option><option value="Everus">Everus</option><option value="Ford">Ford</option><option value="Geely">Geely</option><option value="Genesis">Genesis</option><option value="Haima">Haima</option><option value="Haval">Haval</option><option value="Honda">Honda</option><option value="Hyundai">Hyundai</option><option value="Jaguar">Jaguar</option><option value="Jeep">Jeep</option><option value="KG Mobility">KG Mobility</option><option value="Kia">Kia</option><option value="Lamborghini">Lamborghini</option><option value="Land Rover">Land Rover</option><option value="Lincoln">Lincoln</option><option value="MG">MG</option><option value="MINI">MINI</option><option value="Mercedes-Benz">Mercedes-Benz</option><option value="Nissan">Nissan</option><option value="Peugeot">Peugeot</option><option value="Porsche">Porsche</option><option value="Renault Korea">Renault Korea</option><option value="Subaru">Subaru</option><option value="Tesla">Tesla</option><option value="Toyota">Toyota</option><option value="Volkswagen">Volkswagen</option><option value="Volvo">Volvo</option><option value="Xiangjie">Xiangjie</option><option value="Xiaomi">Xiaomi</option>
+          </select>
+        </label>
+        <label class="finder__select">
+          <span class="sr-only">Модель</span>
+          <select name="model" id="hero-model">
+            <option value="">Все модели</option>
+          </select>
+        </label>
+        <span class="finder__or">или</span>
+        <label class="finder__search">
+          <span class="sr-only">Поиск</span>
+          <input type="search" name="q" id="hero-q" placeholder="Поиск по VIN или номеру лота" autocomplete="off">
+        </label>
+      </div>
+
+      <div class="finder__row finder__row--bottom">
+        <label class="finder__select">
+          <span class="sr-only">Год от</span>
+          <select name="year_from" id="hero-year-from">
+            <option value="">Год от</option>
+            <option value="2027">2027</option><option value="2026">2026</option><option value="2025">2025</option><option value="2024">2024</option><option value="2023">2023</option><option value="2022">2022</option><option value="2021">2021</option><option value="2020">2020</option><option value="2019">2019</option><option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option>
+          </select>
+        </label>
+        <label class="finder__select">
+          <span class="sr-only">Год до</span>
+          <select name="year_to" id="hero-year-to">
+            <option value="">Год до</option>
+            <option value="2027">2027</option><option value="2026">2026</option><option value="2025">2025</option><option value="2024">2024</option><option value="2023">2023</option><option value="2022">2022</option><option value="2021">2021</option><option value="2020">2020</option><option value="2019">2019</option><option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option>
+          </select>
+        </label>
+        <button class="btn btn--primary finder__submit" type="submit" id="hero-submit">
+          Показать <span id="hero-count">881</span> <span data-count-word>машин</span>
+        </button>
+      </div>
+    </form>
+
+    <div class="stats">
+      <div class="stat"><div class="stat__num">3+</div><div class="stat__label">пригнанных авто (примеры)</div></div>
+      <div class="stat"><div class="stat__num">8</div><div class="stat__label">года на рынке</div></div>
+      <div class="stat"><div class="stat__num">896</div><div class="stat__label">лотов в каталогах сейчас</div></div>
+      <div class="stat"><div class="stat__num">3</div><div class="stat__label">отзывов клиентов</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section__head">
+      <h2>Каталоги по странам</h2>
+      <div class="tabs">
+        <a class="tab is-active" href="catalog-encar.html">🇰🇷 Корея</a>
+        <a class="tab " href="catalog-bidcars.html">🇺🇸 США</a>
+        <a class="tab " href="catalog-che168.html">🇨🇳 Китай</a>
+      </div>
+    </div>
+    <div class="lot-grid">
+      
+      
+      
+        
+          <a class="lot-card" href="https://www.encar.com/dc/dc_cardetailview.do?carid=42426372" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/e21988c5c0b5d39222ffb6a90773ff3b.jpg" alt="Kia Morning 2015 Smartstream" loading="lazy" data-ph="Kia" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇰🇷</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Kia Morning 2015 Smartstream</div>
+    <div class="lot-card__specs">
+      <span>2015</span>
+      <span>127297 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">204 000 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 496 000 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://www.encar.com/dc/dc_cardetailview.do?carid=42414083" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/d12bbc7eb947bccc5826a2a247553fe7.jpg" alt="BMW iX3 2024 M Sport" loading="lazy" data-ph="BMW" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇰🇷</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">BMW iX3 2024 M Sport</div>
+    <div class="lot-card__specs">
+      <span>2024</span>
+      <span>33580 км</span>
+      <span>Electric</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">3 240 000 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 3 955 000 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://www.encar.com/dc/dc_cardetailview.do?carid=42334322" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/ab20b7fc392bf8f41091d0558ff5776a.jpg" alt="BMW 5 Series 2025 520i M Sport" loading="lazy" data-ph="BMW" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇰🇷</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">BMW 5 Series 2025 520i M Sport</div>
+    <div class="lot-card__specs">
+      <span>2025</span>
+      <span>25108 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">3 570 000 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 4 334 500 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://www.encar.com/dc/dc_cardetailview.do?carid=42314970" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/342f25e98e965ea3548e5c12723ad4c0.jpg" alt="Hyundai Sonata Hybrid 2022 Inspiration" loading="lazy" data-ph="Hyundai" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇰🇷</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Hyundai Sonata Hybrid 2022 Inspiration</div>
+    <div class="lot-card__specs">
+      <span>2022</span>
+      <span>69607 км</span>
+      <span>Hybrid</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">1 259 400 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 1 746 280 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+      
+        
+          <a class="lot-card" href="https://bid.cars/ru/lot/0-45832168/2014-Honda-CTX700-JH2RC6844EK000322" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/240a84de2a265db7acf6a1279d641b1e.jpg" alt="2014 Honda CTX700, ND" loading="lazy" data-ph="Honda" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇺🇸</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">2014 Honda CTX700, ND</div>
+    <div class="lot-card__specs">
+      <span>2014</span>
+      <span>63444 км</span>
+      <span>—</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">2 250 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 315 812 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://bid.cars/ru/lot/0-45980371/2007-Harley-Davidson-FLHT-1HD1FF4107Y690612" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/90b0e6f10e9989c9affe1cb7af68ada2.jpg" alt="2007 Harley-Davidson FLHT, Classic" loading="lazy" data-ph="Harley-Davidson" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇺🇸</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">2007 Harley-Davidson FLHT, Classic</div>
+    <div class="lot-card__specs">
+      <span>2007</span>
+      <span>28592 км</span>
+      <span>—</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">135 000 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 481 750 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://bid.cars/ru/lot/0-45882619/2025-Naxeon-Nxwoo-HG6113ND6S1000042" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/3f6ace698e839a1f883bdeec3ad44f11.jpg" alt="2025 Naxeon Nxwoo" loading="lazy" data-ph="Naxeon" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇺🇸</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">2025 Naxeon Nxwoo</div>
+    <div class="lot-card__specs">
+      <span>2025</span>
+      <span>845 км</span>
+      <span>—</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">40 500 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 341 575 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://bid.cars/ru/lot/0-46097513/2002-Kawasaki-VN1500-JKBVNAN192A015758" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/8aa0efc86fa685d7c0dae3256a0bbd1c.jpg" alt="2002 Kawasaki VN1500, N1" loading="lazy" data-ph="Kawasaki" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇺🇸</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">2002 Kawasaki VN1500, N1</div>
+    <div class="lot-card__specs">
+      <span>2002</span>
+      <span>23108 км</span>
+      <span>—</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">2 250 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 315 812 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+      
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59995433" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/d4d612bc6c7cec9e58fb56cd71b0ddf0.jpg" alt="Denza Denza D9 2022 DM-i 970 AWD Flagship" loading="lazy" data-ph="Denza" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Denza Denza D9 2022 DM-i 970 AWD Flagship</div>
+    <div class="lot-card__specs">
+      <span>2022</span>
+      <span>56000 км</span>
+      <span>Hybrid</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">414 250 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 697 600 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/60013201" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/5bf322793771fcb66564ca7c2c50713a.jpg" alt="Porsche Cayenne 2019 Cayenne 3.0T" loading="lazy" data-ph="Porsche" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Porsche Cayenne 2019 Cayenne 3.0T</div>
+    <div class="lot-card__specs">
+      <span>2019</span>
+      <span>80000 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">490 250 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 817 812 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/60017759" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/ccfb89162f4fa76a41e8d0ae82a6ac76.jpg" alt="Mercedes-Benz Mercedes-Benz GLE 2021 GLE 450 4MATIC Fashion" loading="lazy" data-ph="Mercedes-Benz" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Mercedes-Benz Mercedes-Benz GLE 2021 GLE 450 4MATIC Fashion</div>
+    <div class="lot-card__specs">
+      <span>2021</span>
+      <span>70000 км</span>
+      <span>Gasoline + 48V Mild Hybrid System</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">624 750 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 950 200 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://global.che168.com/en/detail/59376436" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/ed17c03fe3fb4fa40502aacf8db7cb97.jpg" alt="BMW BMW 4 Series 2014 420i Gran Coupe Luxury Design Package" loading="lazy" data-ph="BMW" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇨🇳</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">BMW BMW 4 Series 2014 420i Gran Coupe Luxury Design Package</div>
+    <div class="lot-card__specs">
+      <span>2014</span>
+      <span>70500 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">113 875 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 347 344 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+      
+    </div>
+    <div class="section__more"><a class="btn btn--outline" href="catalog.html">Все каталоги →</a></div>
+  </div>
+</section>
+
+<section class="section brands-section">
+  <div class="container">
+    <div class="section__head">
+      <h2>Популярные марки</h2>
+      <div class="tabs" id="brand-type-tabs" role="tablist">
+        <button type="button" class="tab is-active" data-vehicle="car" role="tab" aria-selected="true">Автомобиль</button>
+        <button type="button" class="tab" data-vehicle="moto" role="tab" aria-selected="false">Мотоциклы</button>
+      </div>
+    </div>
+    <div class="brand-grid" id="brand-grid" role="list" data-vehicle="car"
+         data-brands-car='[{"count": 196, "has_lots": true, "logo": "/static/brands/kia-logo.svg", "name": "Kia", "vehicle": "car"}, {"count": 157, "has_lots": true, "logo": "/static/brands/hyundai-logo.svg", "name": "Hyundai", "vehicle": "car"}, {"count": 82, "has_lots": true, "logo": "/static/brands/mercedes-benz-logo.svg", "name": "Mercedes-Benz", "vehicle": "car"}, {"count": 72, "has_lots": true, "logo": "/static/brands/bmw-logo.svg", "name": "BMW", "vehicle": "car"}, {"count": 72, "has_lots": true, "logo": "/static/brands/genesis-logo.svg", "name": "Genesis", "vehicle": "car"}, {"count": 45, "has_lots": true, "logo": null, "name": "KG Mobility", "vehicle": "car"}, {"count": 27, "has_lots": true, "logo": "/static/brands/chevrolet-logo.png", "name": "Chevrolet", "vehicle": "car"}, {"count": 24, "has_lots": true, "logo": "/static/brands/audi-logo.svg", "name": "Audi", "vehicle": "car"}, {"count": 23, "has_lots": true, "logo": null, "name": "Renault Korea", "vehicle": "car"}, {"count": 20, "has_lots": true, "logo": "/static/brands/porsche-logo.svg", "name": "Porsche", "vehicle": "car"}, {"count": 18, "has_lots": true, "logo": "/static/brands/tesla-logo.svg", "name": "Tesla", "vehicle": "car"}, {"count": 17, "has_lots": true, "logo": "/static/brands/mini-logo.svg", "name": "MINI", "vehicle": "car"}, {"count": 17, "has_lots": true, "logo": "/static/brands/volkswagen-logo.svg", "name": "Volkswagen", "vehicle": "car"}, {"count": 16, "has_lots": true, "logo": "/static/brands/ford-logo.png", "name": "Ford", "vehicle": "car"}, {"count": 12, "has_lots": true, "logo": "/static/brands/land-rover-logo.svg", "name": "Land Rover", "vehicle": "car"}, {"count": 11, "has_lots": true, "logo": "/static/brands/volvo-logo.svg", "name": "Volvo", "vehicle": "car"}, {"count": 9, "has_lots": true, "logo": "/static/brands/jeep-logo.svg", "name": "Jeep", "vehicle": "car"}, {"count": 8, "has_lots": true, "logo": null, "name": "Lincoln", "vehicle": "car"}, {"count": 6, "has_lots": true, "logo": "/static/brands/toyota-logo.svg", "name": "Toyota", "vehicle": "car"}, {"count": 5, "has_lots": true, "logo": "/static/brands/buick-logo.png", "name": "Buick", "vehicle": "car"}, {"count": 5, "has_lots": true, "logo": "/static/brands/cadillac-logo.png", "name": "Cadillac", "vehicle": "car"}, {"count": 5, "has_lots": true, "logo": "/static/brands/geely-logo.svg", "name": "Geely", "vehicle": "car"}, {"count": 4, "has_lots": true, "logo": "/static/brands/byd-logo.svg", "name": "BYD", "vehicle": "car"}, {"count": 3, "has_lots": true, "logo": "/static/brands/dodge-logo.png", "name": "Dodge", "vehicle": "car"}, {"count": 3, "has_lots": true, "logo": "/static/brands/jaguar-logo.svg", "name": "Jaguar", "vehicle": "car"}, {"count": 3, "has_lots": true, "logo": "/static/brands/peugeot-logo.svg", "name": "Peugeot", "vehicle": "car"}, {"count": 2, "has_lots": true, "logo": "/static/brands/chery-logo.png", "name": "Chery", "vehicle": "car"}, {"count": 2, "has_lots": true, "logo": null, "name": "Denza", "vehicle": "car"}, {"count": 2, "has_lots": true, "logo": "/static/brands/honda-logo.png", "name": "Honda", "vehicle": "car"}, {"count": 2, "has_lots": true, "logo": "/static/brands/nissan-logo.svg", "name": "Nissan", "vehicle": "car"}, {"count": 2, "has_lots": true, "logo": "/static/brands/subaru-logo.png", "name": "Subaru", "vehicle": "car"}, {"count": 1, "has_lots": true, "logo": null, "name": "Alfa Romeo", "vehicle": "car"}, {"count": 1, "has_lots": true, "logo": null, "name": "Besturn", "vehicle": "car"}, {"count": 1, "has_lots": true, "logo": "/static/brands/changan-logo.png", "name": "Changan", "vehicle": "car"}, {"count": 1, "has_lots": true, "logo": null, "name": "Citro\u00ebn", "vehicle": "car"}, {"count": 1, "has_lots": true, "logo": null, "name": "Everus", "vehicle": "car"}, {"count": 1, "has_lots": true, "logo": null, "name": "Haima", "vehicle": "car"}, {"count": 1, "has_lots": true, "logo": "/static/brands/haval-logo.png", "name": "Haval", "vehicle": "car"}, {"count": 1, "has_lots": true, "logo": null, "name": "Lamborghini", "vehicle": "car"}, {"count": 1, "has_lots": true, "logo": null, "name": "MG", "vehicle": "car"}, {"count": 1, "has_lots": true, "logo": null, "name": "Xiangjie", "vehicle": "car"}, {"count": 1, "has_lots": true, "logo": "/static/brands/xiaomi-logo.svg", "name": "Xiaomi", "vehicle": "car"}]'
+         data-brands-moto='[{"count": 6, "has_lots": true, "logo": null, "name": "Harley-Davidson", "vehicle": "moto"}, {"count": 3, "has_lots": true, "logo": null, "name": "Kawasaki", "vehicle": "moto"}, {"count": 2, "has_lots": true, "logo": "/static/brands/honda-logo.png", "name": "Honda", "vehicle": "moto"}, {"count": 1, "has_lots": true, "logo": null, "name": "Gasgas", "vehicle": "moto"}, {"count": 1, "has_lots": true, "logo": null, "name": "Naxeon", "vehicle": "moto"}, {"count": 1, "has_lots": true, "logo": null, "name": "Victory", "vehicle": "moto"}, {"count": 1, "has_lots": true, "logo": null, "name": "Yamaha", "vehicle": "moto"}]'>
+      
+      <button
+        type="button"
+        class="brand-card is-active"
+        data-make="Kia"
+        data-count="196"
+        data-vehicle="car"
+        role="listitem"
+        title="Kia — 196 лотов"
+      >
+        <span class="brand-card__logo" aria-hidden="true">
+          
+          <img class="brand-card__img" src="static/brands/kia-logo.svg" alt="" width="56" height="56" loading="lazy"
+               onerror="this.remove();this.parentNode.textContent='Ki'">
+          
+        </span>
+        <span class="brand-card__name">Kia</span>
+      </button>
+      
+      <button
+        type="button"
+        class="brand-card"
+        data-make="Hyundai"
+        data-count="157"
+        data-vehicle="car"
+        role="listitem"
+        title="Hyundai — 157 лотов"
+      >
+        <span class="brand-card__logo" aria-hidden="true">
+          
+          <img class="brand-card__img" src="static/brands/hyundai-logo.svg" alt="" width="56" height="56" loading="lazy"
+               onerror="this.remove();this.parentNode.textContent='Hy'">
+          
+        </span>
+        <span class="brand-card__name">Hyundai</span>
+      </button>
+      
+      <button
+        type="button"
+        class="brand-card"
+        data-make="Mercedes-Benz"
+        data-count="82"
+        data-vehicle="car"
+        role="listitem"
+        title="Mercedes-Benz — 82 лотов"
+      >
+        <span class="brand-card__logo" aria-hidden="true">
+          
+          <img class="brand-card__img" src="static/brands/mercedes-benz-logo.svg" alt="" width="56" height="56" loading="lazy"
+               onerror="this.remove();this.parentNode.textContent='Me'">
+          
+        </span>
+        <span class="brand-card__name">Mercedes-Benz</span>
+      </button>
+      
+      <button
+        type="button"
+        class="brand-card"
+        data-make="BMW"
+        data-count="72"
+        data-vehicle="car"
+        role="listitem"
+        title="BMW — 72 лотов"
+      >
+        <span class="brand-card__logo" aria-hidden="true">
+          
+          <img class="brand-card__img" src="static/brands/bmw-logo.svg" alt="" width="56" height="56" loading="lazy"
+               onerror="this.remove();this.parentNode.textContent='BM'">
+          
+        </span>
+        <span class="brand-card__name">BMW</span>
+      </button>
+      
+      <button
+        type="button"
+        class="brand-card"
+        data-make="Genesis"
+        data-count="72"
+        data-vehicle="car"
+        role="listitem"
+        title="Genesis — 72 лотов"
+      >
+        <span class="brand-card__logo" aria-hidden="true">
+          
+          <img class="brand-card__img" src="static/brands/genesis-logo.svg" alt="" width="56" height="56" loading="lazy"
+               onerror="this.remove();this.parentNode.textContent='Ge'">
+          
+        </span>
+        <span class="brand-card__name">Genesis</span>
+      </button>
+      
+      <button
+        type="button"
+        class="brand-card"
+        data-make="KG Mobility"
+        data-count="45"
+        data-vehicle="car"
+        role="listitem"
+        title="KG Mobility — 45 лотов"
+      >
+        <span class="brand-card__logo" aria-hidden="true">
+          
+          KG
+          
+        </span>
+        <span class="brand-card__name">KG Mobility</span>
+      </button>
+      
+      <button
+        type="button"
+        class="brand-card"
+        data-make="Chevrolet"
+        data-count="27"
+        data-vehicle="car"
+        role="listitem"
+        title="Chevrolet — 27 лотов"
+      >
+        <span class="brand-card__logo" aria-hidden="true">
+          
+          <img class="brand-card__img" src="static/brands/chevrolet-logo.png" alt="" width="56" height="56" loading="lazy"
+               onerror="this.remove();this.parentNode.textContent='Ch'">
+          
+        </span>
+        <span class="brand-card__name">Chevrolet</span>
+      </button>
+      
+      <button
+        type="button"
+        class="brand-card"
+        data-make="Audi"
+        data-count="24"
+        data-vehicle="car"
+        role="listitem"
+        title="Audi — 24 лотов"
+      >
+        <span class="brand-card__logo" aria-hidden="true">
+          
+          <img class="brand-card__img" src="static/brands/audi-logo.svg" alt="" width="56" height="56" loading="lazy"
+               onerror="this.remove();this.parentNode.textContent='Au'">
+          
+        </span>
+        <span class="brand-card__name">Audi</span>
+      </button>
+      
+      <button
+        type="button"
+        class="brand-card"
+        data-make="Renault Korea"
+        data-count="23"
+        data-vehicle="car"
+        role="listitem"
+        title="Renault Korea — 23 лотов"
+      >
+        <span class="brand-card__logo" aria-hidden="true">
+          
+          Re
+          
+        </span>
+        <span class="brand-card__name">Renault Korea</span>
+      </button>
+      
+      <button
+        type="button"
+        class="brand-card"
+        data-make="Porsche"
+        data-count="20"
+        data-vehicle="car"
+        role="listitem"
+        title="Porsche — 20 лотов"
+      >
+        <span class="brand-card__logo" aria-hidden="true">
+          
+          <img class="brand-card__img" src="static/brands/porsche-logo.svg" alt="" width="56" height="56" loading="lazy"
+               onerror="this.remove();this.parentNode.textContent='Po'">
+          
+        </span>
+        <span class="brand-card__name">Porsche</span>
+      </button>
+      
+      <button
+        type="button"
+        class="brand-card"
+        data-make="Tesla"
+        data-count="18"
+        data-vehicle="car"
+        role="listitem"
+        title="Tesla — 18 лотов"
+      >
+        <span class="brand-card__logo" aria-hidden="true">
+          
+          <img class="brand-card__img" src="static/brands/tesla-logo.svg" alt="" width="56" height="56" loading="lazy"
+               onerror="this.remove();this.parentNode.textContent='Te'">
+          
+        </span>
+        <span class="brand-card__name">Tesla</span>
+      </button>
+      
+      <button
+        type="button"
+        class="brand-card"
+        data-make="MINI"
+        data-count="17"
+        data-vehicle="car"
+        role="listitem"
+        title="MINI — 17 лотов"
+      >
+        <span class="brand-card__logo" aria-hidden="true">
+          
+          <img class="brand-card__img" src="static/brands/mini-logo.svg" alt="" width="56" height="56" loading="lazy"
+               onerror="this.remove();this.parentNode.textContent='MI'">
+          
+        </span>
+        <span class="brand-card__name">MINI</span>
+      </button>
+      
+      <button
+        type="button"
+        class="brand-card"
+        data-make="Volkswagen"
+        data-count="17"
+        data-vehicle="car"
+        role="listitem"
+        title="Volkswagen — 17 лотов"
+      >
+        <span class="brand-card__logo" aria-hidden="true">
+          
+          <img class="brand-card__img" src="static/brands/volkswagen-logo.svg" alt="" width="56" height="56" loading="lazy"
+               onerror="this.remove();this.parentNode.textContent='Vo'">
+          
+        </span>
+        <span class="brand-card__name">Volkswagen</span>
+      </button>
+      
+      <button
+        type="button"
+        class="brand-card"
+        data-make="Ford"
+        data-count="16"
+        data-vehicle="car"
+        role="listitem"
+        title="Ford — 16 лотов"
+      >
+        <span class="brand-card__logo" aria-hidden="true">
+          
+          <img class="brand-card__img" src="static/brands/ford-logo.png" alt="" width="56" height="56" loading="lazy"
+               onerror="this.remove();this.parentNode.textContent='Fo'">
+          
+        </span>
+        <span class="brand-card__name">Ford</span>
+      </button>
+      
+      <button
+        type="button"
+        class="brand-card"
+        data-make="Land Rover"
+        data-count="12"
+        data-vehicle="car"
+        role="listitem"
+        title="Land Rover — 12 лотов"
+      >
+        <span class="brand-card__logo" aria-hidden="true">
+          
+          <img class="brand-card__img" src="static/brands/land-rover-logo.svg" alt="" width="56" height="56" loading="lazy"
+               onerror="this.remove();this.parentNode.textContent='La'">
+          
+        </span>
+        <span class="brand-card__name">Land Rover</span>
+      </button>
+      
+      <button
+        type="button"
+        class="brand-card"
+        data-make="Volvo"
+        data-count="11"
+        data-vehicle="car"
+        role="listitem"
+        title="Volvo — 11 лотов"
+      >
+        <span class="brand-card__logo" aria-hidden="true">
+          
+          <img class="brand-card__img" src="static/brands/volvo-logo.svg" alt="" width="56" height="56" loading="lazy"
+               onerror="this.remove();this.parentNode.textContent='Vo'">
+          
+        </span>
+        <span class="brand-card__name">Volvo</span>
+      </button>
+      
+      <button
+        type="button"
+        class="brand-card"
+        data-make="Jeep"
+        data-count="9"
+        data-vehicle="car"
+        role="listitem"
+        title="Jeep — 9 лотов"
+      >
+        <span class="brand-card__logo" aria-hidden="true">
+          
+          <img class="brand-card__img" src="static/brands/jeep-logo.svg" alt="" width="56" height="56" loading="lazy"
+               onerror="this.remove();this.parentNode.textContent='Je'">
+          
+        </span>
+        <span class="brand-card__name">Jeep</span>
+      </button>
+      
+      <button
+        type="button"
+        class="brand-card"
+        data-make="Lincoln"
+        data-count="8"
+        data-vehicle="car"
+        role="listitem"
+        title="Lincoln — 8 лотов"
+      >
+        <span class="brand-card__logo" aria-hidden="true">
+          
+          Li
+          
+        </span>
+        <span class="brand-card__name">Lincoln</span>
+      </button>
+      
+      <button
+        type="button"
+        class="brand-card"
+        data-make="Toyota"
+        data-count="6"
+        data-vehicle="car"
+        role="listitem"
+        title="Toyota — 6 лотов"
+      >
+        <span class="brand-card__logo" aria-hidden="true">
+          
+          <img class="brand-card__img" src="static/brands/toyota-logo.svg" alt="" width="56" height="56" loading="lazy"
+               onerror="this.remove();this.parentNode.textContent='To'">
+          
+        </span>
+        <span class="brand-card__name">Toyota</span>
+      </button>
+      
+      <button
+        type="button"
+        class="brand-card"
+        data-make="Buick"
+        data-count="5"
+        data-vehicle="car"
+        role="listitem"
+        title="Buick — 5 лотов"
+      >
+        <span class="brand-card__logo" aria-hidden="true">
+          
+          <img class="brand-card__img" src="static/brands/buick-logo.png" alt="" width="56" height="56" loading="lazy"
+               onerror="this.remove();this.parentNode.textContent='Bu'">
+          
+        </span>
+        <span class="brand-card__name">Buick</span>
+      </button>
+      
+      <button
+        type="button"
+        class="brand-card"
+        data-make="Cadillac"
+        data-count="5"
+        data-vehicle="car"
+        role="listitem"
+        title="Cadillac — 5 лотов"
+      >
+        <span class="brand-card__logo" aria-hidden="true">
+          
+          <img class="brand-card__img" src="static/brands/cadillac-logo.png" alt="" width="56" height="56" loading="lazy"
+               onerror="this.remove();this.parentNode.textContent='Ca'">
+          
+        </span>
+        <span class="brand-card__name">Cadillac</span>
+      </button>
+      
+      <button
+        type="button"
+        class="brand-card"
+        data-make="Geely"
+        data-count="5"
+        data-vehicle="car"
+        role="listitem"
+        title="Geely — 5 лотов"
+      >
+        <span class="brand-card__logo" aria-hidden="true">
+          
+          <img class="brand-card__img" src="static/brands/geely-logo.svg" alt="" width="56" height="56" loading="lazy"
+               onerror="this.remove();this.parentNode.textContent='Ge'">
+          
+        </span>
+        <span class="brand-card__name">Geely</span>
+      </button>
+      
+      <button
+        type="button"
+        class="brand-card"
+        data-make="BYD"
+        data-count="4"
+        data-vehicle="car"
+        role="listitem"
+        title="BYD — 4 лотов"
+      >
+        <span class="brand-card__logo" aria-hidden="true">
+          
+          <img class="brand-card__img" src="static/brands/byd-logo.svg" alt="" width="56" height="56" loading="lazy"
+               onerror="this.remove();this.parentNode.textContent='BY'">
+          
+        </span>
+        <span class="brand-card__name">BYD</span>
+      </button>
+      
+      <button
+        type="button"
+        class="brand-card"
+        data-make="Dodge"
+        data-count="3"
+        data-vehicle="car"
+        role="listitem"
+        title="Dodge — 3 лотов"
+      >
+        <span class="brand-card__logo" aria-hidden="true">
+          
+          <img class="brand-card__img" src="static/brands/dodge-logo.png" alt="" width="56" height="56" loading="lazy"
+               onerror="this.remove();this.parentNode.textContent='Do'">
+          
+        </span>
+        <span class="brand-card__name">Dodge</span>
+      </button>
+      
+      <button
+        type="button"
+        class="brand-card"
+        data-make="Jaguar"
+        data-count="3"
+        data-vehicle="car"
+        role="listitem"
+        title="Jaguar — 3 лотов"
+      >
+        <span class="brand-card__logo" aria-hidden="true">
+          
+          <img class="brand-card__img" src="static/brands/jaguar-logo.svg" alt="" width="56" height="56" loading="lazy"
+               onerror="this.remove();this.parentNode.textContent='Ja'">
+          
+        </span>
+        <span class="brand-card__name">Jaguar</span>
+      </button>
+      
+      <button
+        type="button"
+        class="brand-card"
+        data-make="Peugeot"
+        data-count="3"
+        data-vehicle="car"
+        role="listitem"
+        title="Peugeot — 3 лотов"
+      >
+        <span class="brand-card__logo" aria-hidden="true">
+          
+          <img class="brand-card__img" src="static/brands/peugeot-logo.svg" alt="" width="56" height="56" loading="lazy"
+               onerror="this.remove();this.parentNode.textContent='Pe'">
+          
+        </span>
+        <span class="brand-card__name">Peugeot</span>
+      </button>
+      
+      <button
+        type="button"
+        class="brand-card"
+        data-make="Chery"
+        data-count="2"
+        data-vehicle="car"
+        role="listitem"
+        title="Chery — 2 лотов"
+      >
+        <span class="brand-card__logo" aria-hidden="true">
+          
+          <img class="brand-card__img" src="static/brands/chery-logo.png" alt="" width="56" height="56" loading="lazy"
+               onerror="this.remove();this.parentNode.textContent='Ch'">
+          
+        </span>
+        <span class="brand-card__name">Chery</span>
+      </button>
+      
+      <button
+        type="button"
+        class="brand-card"
+        data-make="Denza"
+        data-count="2"
+        data-vehicle="car"
+        role="listitem"
+        title="Denza — 2 лотов"
+      >
+        <span class="brand-card__logo" aria-hidden="true">
+          
+          De
+          
+        </span>
+        <span class="brand-card__name">Denza</span>
+      </button>
+      
+      <button
+        type="button"
+        class="brand-card"
+        data-make="Honda"
+        data-count="2"
+        data-vehicle="car"
+        role="listitem"
+        title="Honda — 2 лотов"
+      >
+        <span class="brand-card__logo" aria-hidden="true">
+          
+          <img class="brand-card__img" src="static/brands/honda-logo.png" alt="" width="56" height="56" loading="lazy"
+               onerror="this.remove();this.parentNode.textContent='Ho'">
+          
+        </span>
+        <span class="brand-card__name">Honda</span>
+      </button>
+      
+      <button
+        type="button"
+        class="brand-card"
+        data-make="Nissan"
+        data-count="2"
+        data-vehicle="car"
+        role="listitem"
+        title="Nissan — 2 лотов"
+      >
+        <span class="brand-card__logo" aria-hidden="true">
+          
+          <img class="brand-card__img" src="static/brands/nissan-logo.svg" alt="" width="56" height="56" loading="lazy"
+               onerror="this.remove();this.parentNode.textContent='Ni'">
+          
+        </span>
+        <span class="brand-card__name">Nissan</span>
+      </button>
+      
+      <button
+        type="button"
+        class="brand-card"
+        data-make="Subaru"
+        data-count="2"
+        data-vehicle="car"
+        role="listitem"
+        title="Subaru — 2 лотов"
+      >
+        <span class="brand-card__logo" aria-hidden="true">
+          
+          <img class="brand-card__img" src="static/brands/subaru-logo.png" alt="" width="56" height="56" loading="lazy"
+               onerror="this.remove();this.parentNode.textContent='Su'">
+          
+        </span>
+        <span class="brand-card__name">Subaru</span>
+      </button>
+      
+      <button
+        type="button"
+        class="brand-card"
+        data-make="Alfa Romeo"
+        data-count="1"
+        data-vehicle="car"
+        role="listitem"
+        title="Alfa Romeo — 1 лотов"
+      >
+        <span class="brand-card__logo" aria-hidden="true">
+          
+          Al
+          
+        </span>
+        <span class="brand-card__name">Alfa Romeo</span>
+      </button>
+      
+      <button
+        type="button"
+        class="brand-card"
+        data-make="Besturn"
+        data-count="1"
+        data-vehicle="car"
+        role="listitem"
+        title="Besturn — 1 лотов"
+      >
+        <span class="brand-card__logo" aria-hidden="true">
+          
+          Be
+          
+        </span>
+        <span class="brand-card__name">Besturn</span>
+      </button>
+      
+      <button
+        type="button"
+        class="brand-card"
+        data-make="Changan"
+        data-count="1"
+        data-vehicle="car"
+        role="listitem"
+        title="Changan — 1 лотов"
+      >
+        <span class="brand-card__logo" aria-hidden="true">
+          
+          <img class="brand-card__img" src="static/brands/changan-logo.png" alt="" width="56" height="56" loading="lazy"
+               onerror="this.remove();this.parentNode.textContent='Ch'">
+          
+        </span>
+        <span class="brand-card__name">Changan</span>
+      </button>
+      
+      <button
+        type="button"
+        class="brand-card"
+        data-make="Citroën"
+        data-count="1"
+        data-vehicle="car"
+        role="listitem"
+        title="Citroën — 1 лотов"
+      >
+        <span class="brand-card__logo" aria-hidden="true">
+          
+          Ci
+          
+        </span>
+        <span class="brand-card__name">Citroën</span>
+      </button>
+      
+      <button
+        type="button"
+        class="brand-card"
+        data-make="Everus"
+        data-count="1"
+        data-vehicle="car"
+        role="listitem"
+        title="Everus — 1 лотов"
+      >
+        <span class="brand-card__logo" aria-hidden="true">
+          
+          Ev
+          
+        </span>
+        <span class="brand-card__name">Everus</span>
+      </button>
+      
+      <button
+        type="button"
+        class="brand-card"
+        data-make="Haima"
+        data-count="1"
+        data-vehicle="car"
+        role="listitem"
+        title="Haima — 1 лотов"
+      >
+        <span class="brand-card__logo" aria-hidden="true">
+          
+          Ha
+          
+        </span>
+        <span class="brand-card__name">Haima</span>
+      </button>
+      
+      <button
+        type="button"
+        class="brand-card"
+        data-make="Haval"
+        data-count="1"
+        data-vehicle="car"
+        role="listitem"
+        title="Haval — 1 лотов"
+      >
+        <span class="brand-card__logo" aria-hidden="true">
+          
+          <img class="brand-card__img" src="static/brands/haval-logo.png" alt="" width="56" height="56" loading="lazy"
+               onerror="this.remove();this.parentNode.textContent='Ha'">
+          
+        </span>
+        <span class="brand-card__name">Haval</span>
+      </button>
+      
+      <button
+        type="button"
+        class="brand-card"
+        data-make="Lamborghini"
+        data-count="1"
+        data-vehicle="car"
+        role="listitem"
+        title="Lamborghini — 1 лотов"
+      >
+        <span class="brand-card__logo" aria-hidden="true">
+          
+          La
+          
+        </span>
+        <span class="brand-card__name">Lamborghini</span>
+      </button>
+      
+      <button
+        type="button"
+        class="brand-card"
+        data-make="MG"
+        data-count="1"
+        data-vehicle="car"
+        role="listitem"
+        title="MG — 1 лотов"
+      >
+        <span class="brand-card__logo" aria-hidden="true">
+          
+          MG
+          
+        </span>
+        <span class="brand-card__name">MG</span>
+      </button>
+      
+      <button
+        type="button"
+        class="brand-card"
+        data-make="Xiangjie"
+        data-count="1"
+        data-vehicle="car"
+        role="listitem"
+        title="Xiangjie — 1 лотов"
+      >
+        <span class="brand-card__logo" aria-hidden="true">
+          
+          Xi
+          
+        </span>
+        <span class="brand-card__name">Xiangjie</span>
+      </button>
+      
+      <button
+        type="button"
+        class="brand-card"
+        data-make="Xiaomi"
+        data-count="1"
+        data-vehicle="car"
+        role="listitem"
+        title="Xiaomi — 1 лотов"
+      >
+        <span class="brand-card__logo" aria-hidden="true">
+          
+          <img class="brand-card__img" src="static/brands/xiaomi-logo.svg" alt="" width="56" height="56" loading="lazy"
+               onerror="this.remove();this.parentNode.textContent='Xi'">
+          
+        </span>
+        <span class="brand-card__name">Xiaomi</span>
+      </button>
+      
+    </div>
+
+    <div class="brand-results" id="brand-results" data-make="Kia" data-vehicle="car">
+      <div class="brand-results__head">
+        <h3 id="brand-results-title">
+          Kia — <span id="brand-results-n">8</span> лотов
+        </h3>
+        <a class="link-btn" id="brand-results-link" href="catalog.html">
+          Весь каталог →
+        </a>
+      </div>
+      <div class="lot-grid lot-grid--brand" id="brand-lot-grid">
+        
+        
+        
+          <a class="lot-card" href="https://www.encar.com/dc/dc_cardetailview.do?carid=42426372" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/e21988c5c0b5d39222ffb6a90773ff3b.jpg" alt="Kia Morning 2015 Smartstream" loading="lazy" data-ph="Kia" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇰🇷</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Kia Morning 2015 Smartstream</div>
+    <div class="lot-card__specs">
+      <span>2015</span>
+      <span>127297 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">204 000 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 496 000 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://www.encar.com/dc/dc_cardetailview.do?carid=42370501" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/346a82f2cdfd82ea27961e5ebea19699.jpg" alt="Kia Sportage 5th Gen Hybrid 2023 Noblesse geuraebiti 2WD" loading="lazy" data-ph="Kia" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇰🇷</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Kia Sportage 5th Gen Hybrid 2023 Noblesse geuraebiti 2WD</div>
+    <div class="lot-card__specs">
+      <span>2023</span>
+      <span>26334 км</span>
+      <span>Hybrid</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">1 800 000 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 2 299 000 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://www.encar.com/dc/dc_cardetailview.do?carid=42361459" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/ecdd6fdafab9e1a288b197668c76ab18.jpg" alt="Kia Carnival 2020 9-seat autdoeo Prestige" loading="lazy" data-ph="Kia" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇰🇷</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Kia Carnival 2020 9-seat autdoeo Prestige</div>
+    <div class="lot-card__specs">
+      <span>2020</span>
+      <span>56420 км</span>
+      <span>Diesel</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">1 194 000 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 1 733 500 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://www.encar.com/dc/dc_cardetailview.do?carid=42300504" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/418fed3b73af58deeb97a1cbc76e963e.jpg" alt="Kia K9 2nd Gen 2021 3.8 GDI AWD beseuteu selreksyeon Ⅰ" loading="lazy" data-ph="Kia" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇰🇷</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Kia K9 2nd Gen 2021 3.8 GDI AWD beseuteu selreksyeon Ⅰ</div>
+    <div class="lot-card__specs">
+      <span>2021</span>
+      <span>20598 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">2 388 000 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 3 100 600 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://www.encar.com/dc/dc_cardetailview.do?carid=42483138" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/42e23af3bb792f843914fa3761333898.jpg" alt="Kia K8 Hybrid 2024 Signature" loading="lazy" data-ph="Kia" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇰🇷</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Kia K8 Hybrid 2024 Signature</div>
+    <div class="lot-card__specs">
+      <span>2024</span>
+      <span>56232 км</span>
+      <span>Hybrid</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">1 872 000 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 2 381 800 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://www.encar.com/dc/dc_cardetailview.do?carid=42458003" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/59a2ee5eea2e04e4fbbcd521af3a41a1.jpg" alt="Kia EV6 2023 GT 4WD" loading="lazy" data-ph="Kia" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇰🇷</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Kia EV6 2023 GT 4WD</div>
+    <div class="lot-card__specs">
+      <span>2023</span>
+      <span>75133 км</span>
+      <span>Electric</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">2 370 000 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 2 954 500 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://www.encar.com/dc/dc_cardetailview.do?carid=42454400" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/a4181cc8a1a978c2467dc891e38b31cf.jpg" alt="Kia Morning 2024 Signature" loading="lazy" data-ph="Kia" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇰🇷</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Kia Morning 2024 Signature</div>
+    <div class="lot-card__specs">
+      <span>2024</span>
+      <span>9670 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">924 000 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 1 291 600 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://www.encar.com/dc/dc_cardetailview.do?carid=42440324" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/1120d23d408198f8f83eb2149557f22d.jpg" alt="Kia Carnival 4th Gen 2022 9-seat Prestige" loading="lazy" data-ph="Kia" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇰🇷</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Kia Carnival 4th Gen 2022 9-seat Prestige</div>
+    <div class="lot-card__specs">
+      <span>2022</span>
+      <span>74473 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">1 230 000 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 1 711 000 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+      </div>
+      <div class="empty" id="brand-empty" hidden>
+        <p><strong>Нет лотов этой марки в каталоге</strong></p>
+        <p class="muted">Парсеры наполняют каталог — загляните позже или задайте подбор в фильтре выше.</p>
+      </div>
+      <div class="empty" id="brand-grid-empty" hidden>
+        <p><strong>Пока нет марок в каталоге</strong></p>
+        <p class="muted">Как только парсеры добавят лоты, марки появятся здесь автоматически.</p>
+      </div>
+      <div class="empty" id="brand-grid-empty-moto" hidden>
+        <p><strong>Пока нет мотоциклов в каталоге</strong></p>
+        <p class="muted">Как только появятся лоты с типом «Мотоцикл», они будут здесь.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container">
+    <h2>Как это работает</h2>
+    <ol class="steps">
+      <li class="step"><span class="step__num">1</span><div><strong>Заявка и подбор</strong><p>Уточняем бюджет и пожелания, показываем варианты из каталогов.</p></div></li>
+      <li class="step"><span class="step__num">2</span><div><strong>Проверка и выкуп</strong><p>История по VIN, фото-отчёт, безопасная оплата.</p></div></li>
+      <li class="step"><span class="step__num">3</span><div><strong>Доставка</strong><p>Море или контейнер, отслеживание на всём пути.</p></div></li>
+      <li class="step"><span class="step__num">4</span><div><strong>Таможня и оформление</strong><p>Пошлина, утильсбор, документы — всё включено в смету.</p></div></li>
+      <li class="step"><span class="step__num">5</span><div><strong>Постановка и выдача</strong><p>Получаете автомобиль с номерами, готовый к дороге.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section__head"><h2>Примеры пригнанных авто</h2><a href="examples.html">Все примеры →</a></div>
+    <div class="card-grid">
+      
+      <a class="content-card" href="example-1.html">
+        <div class="content-card__photo">
+          <img src="static/photos/c4e02f5db63c47275a99260277c428e1.jpg" alt="Hyundai Tucson 2021 — Корея" loading="lazy">
+        </div>
+        <div class="content-card__body">
+          <div class="content-card__title">Hyundai Tucson 2021 — Корея</div>
+          <div class="muted">Корея · 2021 · 38 дней</div>
+          <div class="price">2 450 000 ₽ под ключ</div>
+        </div>
+      </a>
+      
+      <a class="content-card" href="example-2.html">
+        <div class="content-card__photo">
+          <img src="static/photos/7476e6414326c7defaa94787a67384f7.jpg" alt="BMW X5 2018 — США" loading="lazy">
+        </div>
+        <div class="content-card__body">
+          <div class="content-card__title">BMW X5 2018 — США</div>
+          <div class="muted">США · 2018 · 52 дней</div>
+          <div class="price">4 100 000 ₽ под ключ</div>
+        </div>
+      </a>
+      
+      <a class="content-card" href="example-3.html">
+        <div class="content-card__photo">
+          <img src="static/photos/167dbd80066896d2c20b8ecc8c2b2686.jpg" alt="Changan CS75 2022 — Китай" loading="lazy">
+        </div>
+        <div class="content-card__body">
+          <div class="content-card__title">Changan CS75 2022 — Китай</div>
+          <div class="muted">Китай · 2022 · 30 дней</div>
+          <div class="price">1 650 000 ₽ под ключ</div>
+        </div>
+      </a>
+      
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container">
+    <div class="section__head"><h2>Отзывы клиентов</h2><a href="reviews.html">Все отзывы →</a></div>
+    <div class="card-grid card-grid--3">
+      
+      <div class="review-card">
+        <span class="stars" aria-label="Рейтинг 4 из 5"><span class="stars__item is-on">★</span><span class="stars__item is-on">★</span><span class="stars__item is-on">★</span><span class="stars__item is-on">★</span><span class="stars__item ">★</span></span>
+        <p class="review-card__text">Китайский вариант оказался быстрым и бюджетным. Были задержки на таможне из-за очередей — нам сообщили заранее, всё объяснили. В целом доволен.</p>
+        <div class="review-card__author">Дмитрий</div>
+      </div>
+      
+      <div class="review-card">
+        <span class="stars" aria-label="Рейтинг 5 из 5"><span class="stars__item is-on">★</span><span class="stars__item is-on">★</span><span class="stars__item is-on">★</span><span class="stars__item is-on">★</span><span class="stars__item is-on">★</span></span>
+        <p class="review-card__text">Очень переживала из-за покупки авто из США. Всё прозрачно: фото с аукциона, документы, отслеживание судна. BMW пришёл в срок, сюрприсов не было.</p>
+        <div class="review-card__author">Марина</div>
+      </div>
+      
+      <div class="review-card">
+        <span class="stars" aria-label="Рейтинг 5 из 5"><span class="stars__item is-on">★</span><span class="stars__item is-on">★</span><span class="stars__item is-on">★</span><span class="stars__item is-on">★</span><span class="stars__item is-on">★</span></span>
+        <p class="review-card__text">Второй автомобиль с этой командой. Смету посчитали заранее — совпало до рубля. Tucson пригнали за 5 недель, отчитывались на каждом этапе.</p>
+        <div class="review-card__author">Алексей</div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<section class="section cta-band">
+  <div class="container cta-band__inner">
+    <div>
+      <h2>Рассчитайте стоимость под ключ</h2>
+      <p class="muted">Калькулятор даёт ориентир за30 секунд. Точная смета — после выбора лота.</p>
+    </div>
+    <a class="btn btn--accent btn--lg" href="calculator.html">Открыть калькулятор</a>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container container--narrow">
+    <h2>Частые вопросы</h2>
+    <div class="faq">
+      
+      <details class="faq__item">
+        <summary>Сколько времени занимает пригон?</summary>
+        <p>В среднем от 4 до 10 недель: подбор и выкуп 3–7 дней, доставка и таможня — основная часть срока. Точные сроки зависят от страны и маршрута.</p>
+      </details>
+      
+      <details class="faq__item">
+        <summary>Какие гарантии вы даёте?</summary>
+        <p>Договор с фиксированной сметой, фото/видео отчёт на каждом этапе, оплата по факту этапов. VIN-история проверяется до выкупа.</p>
+      </details>
+      
+      <details class="faq__item">
+        <summary>Можно ли рассчитать цену заранее?</summary>
+        <p>Да — калькулятор на сайте даёт ориентир «под ключ». Точная смета формируется после выбора конкретного лота.</p>
+      </details>
+      
+      <details class="faq__item">
+        <summary>Откуда берутся автомобили?</summary>
+        <p>Из проверенных источников: площадки Кореи (Encar), аукционы США (Bid.cars) и экспортные площадки Китая (che168).</p>
+      </details>
+      
+      <details class="faq__item">
+        <summary>Что входит в цену «под ключ»?</summary>
+        <p>Цена лота, комиссия, доставка, таможенное оформление, утильсбор и постановка — без скрытых доплат.</p>
+      </details>
+      
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__grid">
+    <div>
+      <div class="logo logo--footer">АвтоПригон<span class="logo__dot">.</span></div>
+      <p class="footer__text">Пригон автомобилей из Кореи, США и Китая под ключ. Прозрачная смета, договор, отчёт на каждом этапе.</p>
+    </div>
+    <div>
+      <div class="footer__title">Разделы</div>
+      <a href="about.html">О нас</a>
+      <a href="examples.html">Примеры работ</a>
+      <a href="catalog.html">Каталоги</a>
+      <a href="calculator.html">Калькулятор</a>
+      <a href="reviews.html">Отзывы</a>
+    </div>
+    <div>
+      <div class="footer__title">Контакты</div>
+      <a href="tel:+7(900)000-00-00">+7 (900) 000-00-00</a>
+      <a href="mailto:info@example.ru">info@example.ru</a>
+      <span>Телеграм: @autoprigon</span>
+      <span>Москва</span>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <span>© АвтоПригон, 2026</span>
+    
+  </div>
+</footer>
+  <script src="static/js/api-data.js"></script>
+  <script src="static/js/demo.js"></script>
+  <script src="static/js/app.js"></script>
+</body>
+</html>

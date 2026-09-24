@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Каталоги — АвтоПригон</title>
+  <meta name="description" content="Пригон автомобилей из Кореи, США и Китая под ключ. Каталоги, калькулятор стоимости, отзывы.">
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="icon" href="static/favicon.svg" type="image/svg+xml">
+  <meta name="robots" content="noindex, follow">
+</head>
+<body>
+<header class="header">
+  <div class="container header__inner">
+    <a class="logo" href="index.html">АвтоПригон<span class="logo__dot">.</span></a>
+    <nav class="nav" id="main-nav">
+      <a href="about.html" class="nav__link ">О нас</a>
+      <a href="examples.html" class="nav__link ">Примеры</a>
+      <a href="catalog.html" class="nav__link is-active">Каталоги</a>
+      <a href="reviews.html" class="nav__link ">Отзывы</a>
+      <a href="calculator.html" class="nav__link ">Калькулятор</a>
+      <a href="contacts.html" class="nav__link ">Контакты</a>
+    </nav>
+    <a class="btn btn--outline header__phone" href="tel:+7(900)000-00-00">+7 (900) 000-00-00</a>
+    <button class="burger" id="burger" aria-label="Меню" type="button">☰</button>
+  </div>
+</header>
+
+
+
+<main>
+<section class="page-head">
+  <div class="container">
+    <h1>Каталоги авто</h1>
+    <div class="tabs tabs--lg">
+      <a class="tab " href="catalog.html">Все</a>
+      <a class="tab " href="catalog-encar.html">🇰🇷 Корея · Encar</a>
+      <a class="tab is-active" href="catalog-bidcars.html">🇺🇸 США · Bid.cars</a>
+      <a class="tab " href="catalog-che168.html">🇨🇳 Китай · che168</a>
+    </div>
+    
+    <div class="demo-note">Демо-данные: парсеры источников подключаются на следующем этапе. Фильтры и вёрстка — рабочие.</div>
+    
+  </div>
+</section>
+
+<section class="section">
+  <div class="container catalog">
+    <aside class="filters">
+      <form method="get" action="catalog.html" id="catalog-finder" data-count-url="/api/lots/count" data-meta-url="/api/filter/meta" data-models='{&#34;Alfa Romeo&#34;: [&#34;Stelvio&#34;], &#34;Audi&#34;: [&#34;A4&#34;, &#34;A5&#34;, &#34;A6&#34;, &#34;A6L&#34;, &#34;A7&#34;, &#34;A7L&#34;, &#34;A8&#34;, &#34;New A6&#34;, &#34;Q7&#34;, &#34;Q7 New Energy&#34;, &#34;S4&#34;], &#34;BMW&#34;: [&#34;1 Series&#34;, &#34;2 Series Active Tourer&#34;, &#34;2 Series Gran Coupe&#34;, &#34;3 Series&#34;, &#34;4 Series&#34;, &#34;5 Series&#34;, &#34;5 Series GT&#34;, &#34;6 Series GT&#34;, &#34;8 Series&#34;, &#34;M3&#34;, &#34;M4&#34;, &#34;M5&#34;, &#34;X1&#34;, &#34;X2&#34;, &#34;X3&#34;, &#34;X4&#34;, &#34;X5&#34;, &#34;X5 (Import)&#34;, &#34;X6&#34;, &#34;X7&#34;, &#34;i4&#34;, &#34;iX3&#34;], &#34;BYD&#34;: [&#34;F3&#34;, &#34;Song Ultra&#34;], &#34;Besturn&#34;: [&#34;B70&#34;], &#34;Buick&#34;: [&#34;Envision Plus&#34;, &#34;Envision S&#34;, &#34;Excelle&#34;, &#34;Excelle GT&#34;, &#34;LaCrosse&#34;], &#34;Cadillac&#34;: [&#34;ATS-L&#34;, &#34;CT6&#34;, &#34;XT5&#34;, &#34;XT6&#34;], &#34;Changan&#34;: [&#34;CS75&#34;], &#34;Chery&#34;: [&#34;Fengyun 2&#34;, &#34;Tiggo 7&#34;], &#34;Chevrolet&#34;: [&#34;All-New Malibu&#34;, &#34;Aveo&#34;, &#34;Camaro&#34;, &#34;Cruze&#34;, &#34;Impala&#34;, &#34;Malibu&#34;, &#34;New Malibu&#34;, &#34;New Spark&#34;, &#34;New Trax&#34;, &#34;New abeo -door Sedan&#34;, &#34;New teureilbeulRanger&#34;, &#34;Spark&#34;, &#34;Traverse&#34;, &#34;Trax&#34;, &#34;Trax keuroseuobeo&#34;, &#34;kaeptiba&#34;, &#34;nekseuteu Spark&#34;, &#34;olrando&#34;, &#34;rieAll-New Colorado&#34;, &#34;teureilbeulRanger&#34;], &#34;Citroën&#34;: [&#34;C4L&#34;], &#34;Denza&#34;: [&#34;D9&#34;], &#34;Dodge&#34;: [&#34;Charger&#34;], &#34;Everus&#34;: [&#34;S1&#34;], &#34;Ford&#34;: [&#34;Edge&#34;, &#34;Escape&#34;, &#34;Explorer&#34;, &#34;Explorer 6 Gen&#34;, &#34;Focus&#34;, &#34;Fusion&#34;, &#34;Mustang&#34;, &#34;beurotko 6 Gen&#34;, &#34;meoseutaet 7 Gen&#34;], &#34;Geely&#34;: [&#34;Coolray&#34;, &#34;Emgrand&#34;, &#34;GX7&#34;, &#34;King Kong Fortune&#34;, &#34;Vision&#34;], &#34;Genesis&#34;: [&#34;EQ900&#34;, &#34;G70&#34;, &#34;G80&#34;, &#34;G90&#34;, &#34;GV70&#34;, &#34;GV80&#34;, &#34;New G70&#34;], &#34;Haima&#34;: [&#34;M3&#34;], &#34;Haval&#34;: [&#34;Jolion&#34;], &#34;Honda&#34;: [&#34;eokodeu 10 Gen&#34;, &#34;sibik&#34;], &#34;Hyundai&#34;: [&#34;All-New Tucson&#34;, &#34;Avante&#34;, &#34;Avante AD&#34;, &#34;Casper&#34;, &#34;Casper ilrekteurik&#34;, &#34;Equus&#34;, &#34;Genesis DH&#34;, &#34;Grandeur&#34;, &#34;Grandeur HG&#34;, &#34;Grandeur Hybrid&#34;, &#34;Grandeur IG&#34;, &#34;Grandeur IG Hybrid&#34;, &#34;Ioniq 5&#34;, &#34;Ioniq 6&#34;, &#34;Kona&#34;, &#34;LF Sonata&#34;, &#34;LF Sonata Hybrid&#34;, &#34;New Maextro&#34;, &#34;New Palisade&#34;, &#34;New geuraendeu seutarekseu&#34;, &#34;Palisade&#34;, &#34;Santa Fe&#34;, &#34;Santa Fe DM&#34;, &#34;Santa Fe TM&#34;, &#34;Santa Fe peuraim&#34;, &#34;Sonata&#34;, &#34;Sonata Hybrid&#34;, &#34;Staria&#34;, &#34;Tucson&#34;, &#34;Tucson Hybrid&#34;, &#34;aionik ilrekteurik&#34;, &#34;aseulran&#34;, &#34;eksenteu&#34;, &#34;geuraendeu seutarekseu&#34;, &#34;neksso&#34;], &#34;Jaguar&#34;: [&#34;F-PACE&#34;, &#34;XF&#34;, &#34;XJ&#34;], &#34;Jeep&#34;: [&#34;Grand Cherokee&#34;, &#34;Renegade&#34;, &#34;Wrangler&#34;, &#34;cheroki&#34;, &#34;geulraedieiteo&#34;, &#34;keompaeseu 2nd Gen&#34;], &#34;KG Mobility&#34;: [&#34;All-New Rexton&#34;, &#34;G4 Rexton&#34;, &#34;Korando Sport&#34;, &#34;New Rexton Sport&#34;, &#34;New Rexton Sport kan&#34;, &#34;New seutail Korando C&#34;, &#34;Rexton Sport&#34;, &#34;Tivoli&#34;, &#34;Tivoli Air&#34;, &#34;Tivoli ameo&#34;, &#34;aektieon 2nd Gen&#34;, &#34;beri New Tivoli&#34;, &#34;byutipul Korando&#34;, &#34;toreseu&#34;], &#34;Kia&#34;: [&#34;All-New Carens&#34;, &#34;All-New Carnival&#34;, &#34;All-New K3&#34;, &#34;All-New K7&#34;, &#34;All-New Morning&#34;, &#34;All-New Sorento&#34;, &#34;All-New Soul&#34;, &#34;Carnival&#34;, &#34;Carnival 4th Gen&#34;, &#34;Carnival R&#34;, &#34;EV6&#34;, &#34;EV9&#34;, &#34;K3 kup&#34;, &#34;K5&#34;, &#34;K5 2nd Gen&#34;, &#34;K5 3rd Gen&#34;, &#34;K7&#34;, &#34;K7 peurimieo&#34;, &#34;K8&#34;, &#34;K8 Hybrid&#34;, &#34;K9&#34;, &#34;K9 2nd Gen&#34;, &#34;Mohave&#34;, &#34;Mohave maseuteo&#34;, &#34;Morning&#34;, &#34;New K3&#34;, &#34;New K3 2nd Gen&#34;, &#34;New K8 Hybrid&#34;, &#34;New Ray&#34;, &#34;New Seltos&#34;, &#34;New Sorento R&#34;, &#34;New gia Ray&#34;, &#34;Niro&#34;, &#34;Niro EV&#34;, &#34;PV5&#34;, &#34;Ray&#34;, &#34;Seltos&#34;, &#34;Sorento&#34;, &#34;Sorento 4th Gen&#34;, &#34;Sportage 4th Gen&#34;, &#34;Sportage 5th Gen&#34;, &#34;Sportage 5th Gen Hybrid&#34;, &#34;Sportage R&#34;, &#34;Sportage boldeu&#34;, &#34;Stinger&#34;, &#34;Stinger maiseuteo&#34;, &#34;Stonic&#34;, &#34;di All-New Niro&#34;, &#34;taseuman&#34;], &#34;Lamborghini&#34;: [&#34;uruseu&#34;], &#34;Land Rover&#34;: [&#34;Discovery&#34;, &#34;Discovery 5&#34;, &#34;Discovery Sport&#34;, &#34;Discovery Sport 2nd Gen&#34;, &#34;Range Rover 5th Gen&#34;, &#34;Range Rover Evoque 2nd Gen&#34;, &#34;Range Rover Sport 2nd Gen&#34;, &#34;Range Rover Velar&#34;, &#34;dipen&#34;], &#34;Lincoln&#34;: [&#34;ebieiteo 2nd Gen&#34;, &#34;koseeo&#34;, &#34;nebigeiteo 4th Gen&#34;, &#34;notilreoseu 2nd Gen&#34;], &#34;MG&#34;: [&#34;ZS&#34;], &#34;MINI&#34;: [&#34;CLUBMAN&#34;, &#34;Cooper&#34;, &#34;Cooper Clubman&#34;, &#34;Cooper Countryman&#34;, &#34;Cooper S&#34;, &#34;Cooper S Clubman&#34;, &#34;Cooper S Countryman&#34;, &#34;Cooper S Countryman 3rd Gen&#34;, &#34;JCW&#34;, &#34;eiseumaen 1st Gen&#34;], &#34;Mercedes-Benz&#34;: [&#34;AMG GT&#34;, &#34;C-Class&#34;, &#34;C-Class W205&#34;, &#34;C-Class W206&#34;, &#34;CLA-Class C117&#34;, &#34;CLE-Class C236&#34;, &#34;CLS&#34;, &#34;CLS-Class C257&#34;, &#34;E-Class&#34;, &#34;E-Class W213&#34;, &#34;E-Class W214&#34;, &#34;EQC N293&#34;, &#34;EQE SUV X294&#34;, &#34;EQS SUV X296&#34;, &#34;EQS V297&#34;, &#34;G-Class W463b&#34;, &#34;G-Class W465&#34;, &#34;GLA-Class&#34;, &#34;GLA-Class H247&#34;, &#34;GLA-Class X156&#34;, &#34;GLB&#34;, &#34;GLB-Class X247&#34;, &#34;GLC Coupe&#34;, &#34;GLC-Class X253&#34;, &#34;GLC-Class X254&#34;, &#34;GLE&#34;, &#34;GLE-Class&#34;, &#34;GLE-Class W166&#34;, &#34;GLE-Class W167&#34;, &#34;GLS-Class X167&#34;, &#34;Metris&#34;, &#34;S-Class W222&#34;, &#34;S-Class W223&#34;, &#34;SL-Class R232&#34;], &#34;Nissan&#34;: [&#34;Sunny&#34;, &#34;Teana&#34;], &#34;Peugeot&#34;: [&#34;301&#34;, &#34;308&#34;], &#34;Porsche&#34;: [&#34;911&#34;, &#34;Cayenne&#34;, &#34;Macan&#34;, &#34;Panamera&#34;], &#34;Renault Korea&#34;: [&#34;New QM6&#34;, &#34;New SM6&#34;, &#34;NewQM5&#34;, &#34;NewSM5 peulraetineom&#34;, &#34;QM3&#34;, &#34;SM6&#34;, &#34;SM7 New Art&#34;, &#34;XM3&#34;, &#34;areukana&#34;, &#34;geukolreoseu&#34;, &#34;kaepcheo&#34;], &#34;Subaru&#34;: [&#34;BRZ&#34;, &#34;Forester&#34;], &#34;Tesla&#34;: [&#34;Model Y&#34;, &#34;model 3&#34;, &#34;model Y&#34;], &#34;Toyota&#34;: [&#34;Camry&#34;, &#34;Highlander&#34;, &#34;Prius 4th Gen&#34;, &#34;keuraun keuroseuobeo&#34;, &#34;siena 4th Gen&#34;], &#34;Volkswagen&#34;: [&#34;ID.ERA&#34;, &#34;Magotan&#34;, &#34;Passat&#34;, &#34;Passat Lingyu&#34;, &#34;Santana&#34;, &#34;Tiguan&#34;, &#34;ateon&#34;, &#34;golpeu 8 Gen&#34;, &#34;jeta 7 Gen&#34;, &#34;tiguan 2nd Gen&#34;, &#34;tiguan olseupeiseu&#34;, &#34;tuarek 3rd Gen&#34;], &#34;Volvo&#34;: [&#34;S60 3rd Gen&#34;, &#34;S90&#34;, &#34;V40 keuroseukeonteuri&#34;, &#34;XC40&#34;, &#34;XC60 2nd Gen&#34;, &#34;XC90&#34;, &#34;XC90 2nd Gen&#34;], &#34;Xiangjie&#34;: [&#34;Enjoy World S9T&#34;], &#34;Xiaomi&#34;: [&#34;Auto Xiaomi SU7&#34;]}'>
+        <input type="hidden" name="src" value="bidcars">
+        <input type="hidden" name="vehicle" value="car">
+        <div class="filters__title">Фильтры <a class="link-btn" href="catalog-bidcars.html">Сброс</a></div>
+
+        <div class="filters__vehicle" role="tablist">
+          <button type="button" class="filters__vehicle-tab is-active" data-vehicle="car" role="tab">Автомобиль</button>
+          <button type="button" class="filters__vehicle-tab" data-vehicle="moto" role="tab">Мотоцикл</button>
+        </div>
+
+        <label class="field"><span>Поиск</span>
+          <input type="search" name="q" value="" placeholder="Название, VIN, номер лота…">
+        </label>
+        <label class="field"><span>Марка</span>
+          <select name="make" id="cat-make">
+            <option value="">Все марки</option>
+            <option value="Alfa Romeo" >Alfa Romeo</option><option value="Audi" >Audi</option><option value="BMW" >BMW</option><option value="BYD" >BYD</option><option value="Besturn" >Besturn</option><option value="Buick" >Buick</option><option value="Cadillac" >Cadillac</option><option value="Changan" >Changan</option><option value="Chery" >Chery</option><option value="Chevrolet" >Chevrolet</option><option value="Citroën" >Citroën</option><option value="Denza" >Denza</option><option value="Dodge" >Dodge</option><option value="Everus" >Everus</option><option value="Ford" >Ford</option><option value="Geely" >Geely</option><option value="Genesis" >Genesis</option><option value="Haima" >Haima</option><option value="Haval" >Haval</option><option value="Honda" >Honda</option><option value="Hyundai" >Hyundai</option><option value="Jaguar" >Jaguar</option><option value="Jeep" >Jeep</option><option value="KG Mobility" >KG Mobility</option><option value="Kia" >Kia</option><option value="Lamborghini" >Lamborghini</option><option value="Land Rover" >Land Rover</option><option value="Lincoln" >Lincoln</option><option value="MG" >MG</option><option value="MINI" >MINI</option><option value="Mercedes-Benz" >Mercedes-Benz</option><option value="Nissan" >Nissan</option><option value="Peugeot" >Peugeot</option><option value="Porsche" >Porsche</option><option value="Renault Korea" >Renault Korea</option><option value="Subaru" >Subaru</option><option value="Tesla" >Tesla</option><option value="Toyota" >Toyota</option><option value="Volkswagen" >Volkswagen</option><option value="Volvo" >Volvo</option><option value="Xiangjie" >Xiangjie</option><option value="Xiaomi" >Xiaomi</option>
+          </select>
+        </label>
+        <label class="field"><span>Модель</span>
+          <select name="model" id="cat-model" data-selected="">
+            <option value="">Все модели</option>
+          </select>
+        </label>
+        <div class="form-row form-row--2">
+          <label class="field"><span>Год от</span><input type="number" name="year_from" value="" placeholder="2009"></label>
+          <label class="field"><span>Год до</span><input type="number" name="year_to" value="" placeholder="2026"></label>
+        </div>
+        <label class="field"><span>Пробег до, км</span><input type="number" name="mileage_to" value=""></label>
+        <label class="field"><span>Цена до, тыс. ₽</span><input type="number" name="price_to" value=""></label>
+        <label class="field"><span>Бюджет «под ключ», млн ₽</span><input type="number" step="0.1" name="budget" value=""></label>
+        <label class="field"><span>Топливо</span>
+          <select name="fuel" id="cat-fuel">
+            <option value="">Любое</option>
+            <option value="бензин" >бензин</option><option value="Diesel" >Diesel</option><option value="Electric" >Electric</option><option value="Gas" >Gas</option><option value="Gasoline + 48V Mild Hybrid System" >Gasoline + 48V Mild Hybrid System</option><option value="Hybrid" >Hybrid</option><option value="Hydrogen" >Hydrogen</option><option value="LPG" >LPG</option><option value="Pure Electric" >Pure Electric</option><option value="Range Extender" >Range Extender</option>
+          </select>
+        </label>
+        <label class="field"><span>Коробка</span>
+          <select name="transmission" id="cat-transmission">
+            <option value="">Любая</option>
+            <option value="автомат" >автомат</option><option value="Automatic" >Automatic</option><option value="Manual" >Manual</option>
+          </select>
+        </label>
+        <button class="btn btn--primary btn--block" type="submit">
+          Показать <span id="cat-count">23</span> <span data-count-word>машин</span>
+        </button>
+      </form>
+    </aside>
+
+    <div class="catalog__list">
+      <div class="catalog__toolbar">
+        <span class="catalog__count">Найдено: <strong id="cat-count-top">23</strong></span>
+        <form method="get" action="catalog.html" class="catalog__sort">
+          <input type="hidden" name="src" value="bidcars">
+          <input type="hidden" name="vehicle" value="car">
+          <select name="sort" onchange="this.form.submit()">
+            <option value="new" selected>Сначала новые</option>
+            <option value="price_asc" >Цена ↑</option>
+            <option value="price_desc" >Цена ↓</option>
+            <option value="year_desc" >Год ↓</option>
+            <option value="mileage_asc" >Пробег ↑</option>
+          </select>
+        </form>
+      </div>
+
+      
+      
+      
+      <div class="lot-grid lot-grid--list">
+        
+          <a class="lot-card" href="https://bid.cars/ru/lot/1-69100726/2018-Ford-Edge-2FMPK4J97JBC22916" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/0f2545d7e7e9293708cc393e8a4b26db.jpg" alt="2018 Ford Edge, Sel" loading="lazy" data-ph="Ford" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇺🇸</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">2018 Ford Edge, Sel</div>
+    <div class="lot-card__specs">
+      <span>2018</span>
+      <span>89951 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">108 000 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 448 000 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://bid.cars/ru/lot/1-66532906/2021-BMW-X5-5YMJU0C03M9F17146" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/67e9c0c9ac5379f3fd1bfc8a9a39bd25.jpg" alt="2021 BMW X5, M" loading="lazy" data-ph="BMW" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇺🇸</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">2021 BMW X5, M</div>
+    <div class="lot-card__specs">
+      <span>2021</span>
+      <span>52547 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">2 241 000 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 2 993 200 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://bid.cars/ru/lot/1-67805116/2025-Ford-Escape-1FMCU0GN7SUA43292" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/7a7da97643a2750d922d491b37b37d8f.jpg" alt="2025 Ford Escape, Active" loading="lazy" data-ph="Ford" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇺🇸</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">2025 Ford Escape, Active</div>
+    <div class="lot-card__specs">
+      <span>2025</span>
+      <span>29964 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">513 000 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 884 950 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://bid.cars/ru/lot/1-67814986/2020-Ford-Fusion-3FA6P0HD3LR261405" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/8de0a8aaf50a6507fb13a814989c0562.jpg" alt="2020 Ford Fusion, SE" loading="lazy" data-ph="Ford" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇺🇸</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">2020 Ford Fusion, SE</div>
+    <div class="lot-card__specs">
+      <span>2020</span>
+      <span>134472 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">130 500 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 476 125 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://bid.cars/ru/lot/1-68693686/2017-Chevrolet-Camaro-1G1FB1RS9H0127199" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/39fe1ed42bbc254c248544654ef5bbe1.jpg" alt="2017 Chevrolet Camaro, LT" loading="lazy" data-ph="Chevrolet" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇺🇸</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">2017 Chevrolet Camaro, LT</div>
+    <div class="lot-card__specs">
+      <span>2017</span>
+      <span>140769 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">337 500 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 734 875 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://bid.cars/ru/lot/1-69419416/2023-Dodge-Charger-2C3CDXHG9PH522311" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/b937b266c55cc54e55341e5c3b487227.jpg" alt="2023 Dodge Charger, GT" loading="lazy" data-ph="Dodge" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇺🇸</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">2023 Dodge Charger, GT</div>
+    <div class="lot-card__specs">
+      <span>2023</span>
+      <span>999999 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">78 750 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 385 562 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://bid.cars/ru/lot/1-66380216/2019-BMW-X5-5UXCR6C57KLL04066" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/7476e6414326c7defaa94787a67384f7.jpg" alt="2019 BMW X5, Xdrive40I" loading="lazy" data-ph="BMW" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇺🇸</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">2019 BMW X5, Xdrive40I</div>
+    <div class="lot-card__specs">
+      <span>2019</span>
+      <span>124241 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">1 305 000 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 1 944 250 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://bid.cars/ru/lot/1-47155625/2018-Ford-Fusion-3FA6P0LU7JR242523" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/49431ac42776149783b56c12d41c8abe.jpg" alt="2018 Ford Fusion, Se Hybrid" loading="lazy" data-ph="Ford" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇺🇸</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">2018 Ford Fusion, Se Hybrid</div>
+    <div class="lot-card__specs">
+      <span>2018</span>
+      <span>95508 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">33 750 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 355 188 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://bid.cars/ru/lot/1-67221256/2017-Ford-Fusion-3FA6P0HD4HR255622" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/b92176281d88afb22591fbc0f62b4681.jpg" alt="2017 Ford Fusion, SE" loading="lazy" data-ph="Ford" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇺🇸</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">2017 Ford Fusion, SE</div>
+    <div class="lot-card__specs">
+      <span>2017</span>
+      <span>109242 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">193 500 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 554 875 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://bid.cars/ru/lot/1-58849076/2020-Mercedes-Benz-GLE-Class-4JGFB4KB2LA088943" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/324493984d63e63ca5c1866166599e39.jpg" alt="2020 Mercedes-Benz GLE-Class, 350 4M..." loading="lazy" data-ph="Mercedes-Benz" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇺🇸</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">2020 Mercedes-Benz GLE-Class, 350 4M...</div>
+    <div class="lot-card__specs">
+      <span>2020</span>
+      <span>121908 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">1 584 000 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 2 293 000 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://bid.cars/ru/lot/1-62971556/2021-Mercedes-Benz-E-Class-W1KZF8DB7MA927745" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/f43a808db1bba35752f86e7c8d9a1650.jpg" alt="2021 Mercedes-Benz E-Class, 350" loading="lazy" data-ph="Mercedes-Benz" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇺🇸</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">2021 Mercedes-Benz E-Class, 350</div>
+    <div class="lot-card__specs">
+      <span>2021</span>
+      <span>79435 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">1 251 000 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 1 805 200 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://bid.cars/ru/lot/1-65959776/2022-BMW-X5-5UXTA6C08N9K88182" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/3a7a3382b30e799b5f65692cac9f990b.jpg" alt="2022 BMW X5, Xdrive45E" loading="lazy" data-ph="BMW" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇺🇸</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">2022 BMW X5, Xdrive45E</div>
+    <div class="lot-card__specs">
+      <span>2022</span>
+      <span>92295 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">1 296 000 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 1 859 200 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://bid.cars/ru/lot/1-52284466/2017-BMW-X5-5UXKT0C35H0V97808" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/b0818438af0b756d3db51a308453ca2e.jpg" alt="2017 BMW X5, Xdr40E" loading="lazy" data-ph="BMW" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇺🇸</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">2017 BMW X5, Xdr40E</div>
+    <div class="lot-card__specs">
+      <span>2017</span>
+      <span>141455 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">414 000 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 830 500 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://bid.cars/ru/lot/1-68224056/2018-BMW-3-Series-WBA8E1C51JA167509" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/ba07ba4f95d27e9bb30d9859cd2550ed.jpg" alt="2018 BMW 3 Series, 330E" loading="lazy" data-ph="BMW" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇺🇸</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">2018 BMW 3 Series, 330E</div>
+    <div class="lot-card__specs">
+      <span>2018</span>
+      <span>52771 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">261 000 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 639 250 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://bid.cars/ru/lot/1-66379346/2020-Dodge-Charger-2C3CDXBG3LH119525" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/d14e344effdda0d4d89291f029d1088f.jpg" alt="2020 Dodge Charger, Sxt" loading="lazy" data-ph="Dodge" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇺🇸</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">2020 Dodge Charger, Sxt</div>
+    <div class="lot-card__specs">
+      <span>2020</span>
+      <span>83092 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">279 000 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 661 750 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://bid.cars/ru/lot/1-41587106/2021-Jeep-Grand-Cherokee-1C4RJJDG0M8154216" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/d2997ea62b4eca3ef481ebbdaa9bc048.jpg" alt="2021 Jeep Grand Cherokee, L Overland" loading="lazy" data-ph="Jeep" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇺🇸</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">2021 Jeep Grand Cherokee, L Overland</div>
+    <div class="lot-card__specs">
+      <span>2021</span>
+      <span>45347 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">450 000 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 844 000 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://bid.cars/ru/lot/1-64821626/2020-Mercedes-Benz-GLA-Class-WDCTG4GB2LJ687465" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/26cb727feebfe7337517798c57b99a17.jpg" alt="2020 Mercedes-Benz GLA-Class, 250 4M..." loading="lazy" data-ph="Mercedes-Benz" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇺🇸</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">2020 Mercedes-Benz GLA-Class, 250 4M...</div>
+    <div class="lot-card__specs">
+      <span>2020</span>
+      <span>54085 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">261 000 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 639 250 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://bid.cars/ru/lot/1-65875256/2019-Mercedes-Benz-C-Class-WDDWK8DB9KF798924" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/978f2ad7adbfe9c063d6be0312e63d0d.jpg" alt="2019 Mercedes-Benz C-Class, 300" loading="lazy" data-ph="Mercedes-Benz" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇺🇸</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">2019 Mercedes-Benz C-Class, 300</div>
+    <div class="lot-card__specs">
+      <span>2019</span>
+      <span>47440 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">999 000 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 1 561 750 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://bid.cars/ru/lot/1-68954536/2017-Dodge-Charger-2C3CDXBG5HH627681" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/f5ad6231adc15c81795bac635ead995e.jpg" alt="2017 Dodge Charger, SE" loading="lazy" data-ph="Dodge" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇺🇸</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">2017 Dodge Charger, SE</div>
+    <div class="lot-card__specs">
+      <span>2017</span>
+      <span>154821 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">139 500 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 487 375 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://bid.cars/ru/lot/1-61142916/2018-Mercedes-Benz-Metris-WD4PG2EE2J3407222" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <img src="static/photos/aa8fb187b6b49a66dcd488152eecd2df.jpg" alt="2018 Mercedes-Benz Metris" loading="lazy" data-ph="Mercedes-Benz" onerror="var d=document.createElement('div');d.className='lot-card__placeholder';d.textContent=this.getAttribute('data-ph')||'Авто';this.replaceWith(d)">
+    <span class="lot-card__flag">🇺🇸</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">2018 Mercedes-Benz Metris</div>
+    <div class="lot-card__specs">
+      <span>2018</span>
+      <span>999999 км</span>
+      <span>Gas</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">270 000 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 650 500 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://bid.cars/" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <div class="lot-card__placeholder">Ford</div>
+    <span class="lot-card__flag">🇺🇸</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Ford Mustang 2017 GT</div>
+    <div class="lot-card__specs">
+      <span>2017</span>
+      <span>61000 км</span>
+      <span>бензин</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">1 701 000 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 2 439 250 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://bid.cars/" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <div class="lot-card__placeholder">BMW</div>
+    <span class="lot-card__flag">🇺🇸</span>
+    <span class="badge badge--new">NEW</span>
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">BMW X5 2018 xDrive35i</div>
+    <div class="lot-card__specs">
+      <span>2018</span>
+      <span>78000 км</span>
+      <span>бензин</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">2 205 000 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 3 069 250 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+          <a class="lot-card" href="https://bid.cars/" target="_blank" rel="noopener">
+  <div class="lot-card__photo">
+    <div class="lot-card__placeholder">Toyota</div>
+    <span class="lot-card__flag">🇺🇸</span>
+    
+  </div>
+  <div class="lot-card__body">
+    <div class="lot-card__title">Toyota Camry 2019 LE</div>
+    <div class="lot-card__specs">
+      <span>2019</span>
+      <span>45000 км</span>
+      <span>бензин</span>
+    </div>
+    <div class="lot-card__prices">
+      <div class="price">1 458 000 ₽</div>
+      
+      <div class="price price--turnkey">под ключ ≈ 2 135 500 ₽</div>
+      
+    </div>
+  </div>
+</a>
+        
+      </div>
+      
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__grid">
+    <div>
+      <div class="logo logo--footer">АвтоПригон<span class="logo__dot">.</span></div>
+      <p class="footer__text">Пригон автомобилей из Кореи, США и Китая под ключ. Прозрачная смета, договор, отчёт на каждом этапе.</p>
+    </div>
+    <div>
+      <div class="footer__title">Разделы</div>
+      <a href="about.html">О нас</a>
+      <a href="examples.html">Примеры работ</a>
+      <a href="catalog.html">Каталоги</a>
+      <a href="calculator.html">Калькулятор</a>
+      <a href="reviews.html">Отзывы</a>
+    </div>
+    <div>
+      <div class="footer__title">Контакты</div>
+      <a href="tel:+7(900)000-00-00">+7 (900) 000-00-00</a>
+      <a href="mailto:info@example.ru">info@example.ru</a>
+      <span>Телеграм: @autoprigon</span>
+      <span>Москва</span>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <span>© АвтоПригон, 2026</span>
+    
+  </div>
+</footer>
+  <script src="static/js/api-data.js"></script>
+  <script src="static/js/demo.js"></script>
+  <script src="static/js/app.js"></script>
+</body>
+</html>
