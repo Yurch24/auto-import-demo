@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" width="640" height="480">
+<rect width="640" height="480" fill="#e9edf2"/>
+<g fill="none" stroke="#9aa7b5" stroke-width="8" stroke-linejoin="round">
+<path d="M150 300h340l-30-90a24 24 0 0 0-22-16H202a24 24 0 0 0-22 16z"/>
+</g>
+<circle cx="212" cy="312" r="34" fill="none" stroke="#9aa7b5" stroke-width="8"/>
+<circle cx="428" cy="312" r="34" fill="none" stroke="#9aa7b5" stroke-width="8"/>
+<text x="320" y="404" font-family="system-ui,sans-serif" font-size="26" fill="#7d8894" text-anchor="middle">фото недоступно</text>
+</svg>
